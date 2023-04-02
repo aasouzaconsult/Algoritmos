@@ -15,11 +15,25 @@ Códigos auxiliares diversos nas seguintes linguagens:
 - Algoritmos de árvores
   - há implementações de algoritmos relacionados a árvores, como Árvore AVL, Árvore Rubro-Negra, Árvore B, entre outros.
 - Algoritmos de programação dinâmica
-  - há implementações de algoritmos de programação dinâmica, como Fibonacci, Knapsack, Longest Common Subsequence, entre outros.
+  - há implementações de algoritmos de programação dinâmica, como Fibonacci, Knapsack, Longest Common Subsequence, números primos, dentre outros.
 - Algoritmos diversos
   - há implementações de diversos outros algoritmos, como algoritmos de criptografia, algoritmos de compressão de dados, algoritmos de processamento de imagens, entre outros.
-
-Em resumo, o repositório contém diversas implementações de algoritmos em diferentes linguagens de programação, sendo uma ótima fonte de referência para estudantes e desenvolvedores que desejam aprimorar seus conhecimentos em algoritmos e estruturas de dados.
+- Muito mais...
+  - Algoritmo de Euclides Estendido: um algoritmo que encontra o máximo divisor comum (MDC) entre dois números inteiros e também encontra os coeficientes de Bézout, que são úteis em diversas aplicações, como criptografia.
+  - Algoritmo de Floyd-Warshall: um algoritmo que encontra o caminho mais curto entre todos os pares de vértices em um grafo ponderado.
+  - Algoritmo de Kruskal: um algoritmo de árvore geradora mínima que encontra uma subárvore que conecta todos os vértices de um grafo não direcionado ponderado.
+  - Algoritmo de Bellman-Ford: um algoritmo que encontra o caminho mais curto entre um vértice de origem e todos os outros vértices em um grafo ponderado com arestas negativas.
+  - Algoritmo de Boyer-Moore: um algoritmo de busca de padrões que é eficiente em casos onde o padrão a ser buscado é maior do que o texto onde a busca é realizada
+  - Algoritmo de Edmonds-Karp: um algoritmo de fluxo máximo que utiliza a técnica de Busca em Largura (BFS) para encontrar o caminho mais curto entre a fonte e o sorvedouro em um grafo ponderado.
+  - Algoritmo de Prim: um algoritmo de árvore geradora mínima que encontra uma subárvore que conecta todos os vértices de um grafo não direcionado ponderado.
+  - Algoritmo de Kosaraju: um algoritmo que encontra as componentes fortemente conectadas em um grafo direcionado.
+  - Algoritmo de Ford-Fulkerson: um algoritmo de fluxo máximo que utiliza a técnica de Caminho Aumentante para encontrar o fluxo máximo em um grafo ponderado.
+  - Algoritmo de Monte Carlo: um algoritmo que utiliza amostragem aleatória para resolver problemas, como integração numérica e teste de primalidade.
+  - Algoritmo de Aho-Corasick: um algoritmo que encontra todas as ocorrências de um conjunto de padrões em um texto, em tempo linear em relação ao tamanho do texto.
+  - Algoritmo de Strassen: um algoritmo que realiza a multiplicação de matrizes em tempo subquadrático, tornando-o mais eficiente do que o algoritmo padrão de multiplicação de matrizes.
+  - Algoritmo de Huffman: um algoritmo que codifica dados de forma eficiente, utilizando a menor quantidade de bits possível para representar cada caractere.
+  - Algoritmo de Rabin-Karp: um algoritmo de busca de padrões que utiliza hash de strings para encontrar todas as ocorrências de um padrão em um texto.
+  - Algoritmo de Backtracking: um algoritmo que utiliza a técnica de tentativa e erro para encontrar uma solução para um problema, explorando todas as possibilidades até encontrar uma solução válida.
 
 -----------
 **Alex Souza**
