@@ -1,0 +1,5 @@
+Vídeo
+https://www.youtube.com/watch?v=gvpj71P-QUs&feature=youtu.be
+
+Script do vídeo
+https://gist.github.com/ledmaster/031e531ea35494d2357926405532e254
