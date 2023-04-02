@@ -34,6 +34,7 @@ Códigos auxiliares diversos nas seguintes linguagens:
   - Algoritmo de Huffman: um algoritmo que codifica dados de forma eficiente, utilizando a menor quantidade de bits possível para representar cada caractere.
   - Algoritmo de Rabin-Karp: um algoritmo de busca de padrões que utiliza hash de strings para encontrar todas as ocorrências de um padrão em um texto.
   - Algoritmo de Backtracking: um algoritmo que utiliza a técnica de tentativa e erro para encontrar uma solução para um problema, explorando todas as possibilidades até encontrar uma solução válida.
+  - E muito mais... confiram!
 
 -----------
 **Alex Souza**
