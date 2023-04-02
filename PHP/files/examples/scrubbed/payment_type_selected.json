@@ -1,0 +1,32 @@
+{
+  "created": "2015-12-15T12:41:31Z",
+  "user_id": "0133-4634-IGTX",
+  "session_ari": "26IZTUR8QVRCC1MN",
+  "meta": {
+    "result": { 
+      "phone": "*-***-***-****",
+      "type": "DEBIT",
+      "bank": "CAPITAL ONE",
+      "brand": "MASTERCARD",
+      "address": "**** **** **.  *** *********  ** *****-****",
+      "country2_iso": "USA",
+      "level": "PLATINUM",
+      "www": "www.capitalone.com"
+    }
+  },
+  "card_number": "****",
+  "expiration": "1119",
+  "ms": 65983.127,
+  "user_ari": "0133-4634-IGTX",
+  "app_id": "user-portal",
+  "id": "FUOGR9GEIB2U7DV5",
+  "card_type": "debit",
+  "__affirm_tracking_uuid": "6a3bdda6-0c16-4023-a0ce-716bbba2f404",
+  "hr": "https://www.affirm.com/u/#/loans/JX8B-9AJM/payment",
+  "ts": 1461182141502,
+  "network": "mastercard",
+  "X-Affirm-Request-Id": "1cd655d3-7f41-42e3-c22f-2ec36e81505d",
+  "type": "credit_card",
+  "release": "9.2.1",
+  "name": "**** ******"
+}

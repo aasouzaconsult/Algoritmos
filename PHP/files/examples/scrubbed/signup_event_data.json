@@ -1,0 +1,20 @@
+{
+  "merchant": "Blu Dot - SF",
+  "phone_number": "**********",
+  "name": {
+    "last": "********",
+    "first": "***",
+    "full": "*** ********"
+  },
+  "X-Affirm-Request-Id": "5d05b7a4-6427-4646-c606-c98438dc18dc",
+  "context_ari": "8GCVXK82I55T5SE5",
+  "dob": "********",
+  "email": ["*********@*******.***", "**********@***.***"],
+  "ssn_last4": "****",
+  "ts": 1461181560867,
+  "hr": "https://api.affirm.com/checkout/CF4R47CV3VPOQ7C0/new/8GCVXK82I55T5SE5/?fs=1#/signup",
+  "__affirm_tracking_uuid": "01d10a9c-8905-4c43-a567-9c17290cf9d8",
+  "ms": 42428.19,
+  "release": "5.4.1-0",
+  "app_id": "checkout"
+}
