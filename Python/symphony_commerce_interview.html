@@ -1,0 +1,67 @@
+<!-- Countdown timer to 2016-->
+<!-- days, hours, minutes, seconds-->
+<!-- "Happy 2016"-->
+<!--jquery-->
+<div class="container">
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="main">
+            <div class="content">
+                <h1>Countdown to 2016</h1>
+            </div>
+            <div id="countdown">
+        
+            </div>        
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<style>
+.container {
+    margin: 0px auto;
+    padding: 0px;
+}
+.main {
+ background: #eee;
+ height: 500px;
+}
+#countdown {
+    color: #000;
+}
+#countdown span {
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:center
+}
+</style>
+<script>
+    var targetDate = new Date("Jan 1, 2016").getTime();
+    var days, hours, minutes, seconds
+
+    var countdown = document.getElementById("countdown");
+
+    setInterval(function() {
+        //find seconds to target
+    var currentDate =  new Date().getTime();
+    //var secondsLeft = 0;
+    var secondsLeft = (targetDate - currentDate) / 1000;
+        days = parseInt(secondsLeft / 86400);
+        secondsLeft = secondsLeft % 86400;
+        
+        hours = parseInt(secondsLeft / 3600);
+        secondsLeft = secondsLeft % 3600;
+        
+        minutes = parseInt(secondsLeft / 60);
+        seconds = parseInt(secondsLeft % 60);
+        
+        countdown.innerHTML = '<span class="days">' + days + ' <b>Days</b></span> <span class="hours">' +hours + '<b>Hours</b></span> <span class="minutes">' +minutes+ '<b>Minutes</b></span> <span class="seconds">' +seconds + '<b>Seconds</b></span>';
+        if (secondsLeft <= 0) {
+            $('#countdown').replaceWith('<h1>Happy 2016</h1>');
+        }
+    }, 1000);
+</script>
