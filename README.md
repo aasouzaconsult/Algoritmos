@@ -43,6 +43,8 @@ Códigos auxiliares diversos nas seguintes linguagens:
 # Livros e Artigos
 - [O que é Algoritmo?](https://blogdozouza.wordpress.com/2019/05/31/o-que-e-algoritmo/)
 - [Algoritmos - Teoria e Prática](https://www.amazon.com.br/Algoritmos-Teoria-Pr%C3%A1tica-Thomas-Cormen/dp/8535236996)
+- [Código limpo: Habilidades práticas do Agile Software](https://www.amazon.com.br/C%C3%B3digo-limpo-Robert-C-Martin/dp/8576082675/)
+- [O codificador limpo: Um código de conduta para programadores profissionais](https://www.amazon.com.br/codificador-limpo-conduta-programadores-profissionais/dp/8576086476/)
 
 -----------
 **Alex Souza**
