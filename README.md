@@ -1,8 +1,10 @@
 # Algoritmos Auxiliares
 Códigos auxiliares diversos nas seguintes linguagens:
-- <a href='https://github.com/aasouzaconsult/Algoritmos-Auxiliares'>PYTHON</a>
 - <a href='https://1drv.ms/u/s!AtlsFPWf_b5KvDAtbg5jNPyDN9Hv?e=a2nXLw'>JAVA</a>
 - <a href='https://github.com/aasouzaconsult/Algoritmos/tree/main/PHP'>PHP</a>
+- <a href='https://github.com/aasouzaconsult/Algoritmos/tree/main/Python'>PYTHON</a>
+- <a href='https://github.com/aasouzaconsult/Algoritmos/tree/main/PHP'>Machine Learning</a>
+
 
 -----------
 **Alex Souza**
