@@ -1,0 +1,4 @@
+Inspecionando Dataframes com Pandas Profiling
+Database: Diabets
+
+https://www.youtube.com/watch?v=XOCMjY8joSo&feature=youtu.be
