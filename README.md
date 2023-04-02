@@ -36,6 +36,9 @@ Códigos auxiliares diversos nas seguintes linguagens:
   - Algoritmo de Backtracking: um algoritmo que utiliza a técnica de tentativa e erro para encontrar uma solução para um problema, explorando todas as possibilidades até encontrar uma solução válida.
   - E muito mais... confiram!
 
+# Livros
+- [Algoritmos - Teoria e Prática](https://www.amazon.com.br/Algoritmos-Teoria-Pr%C3%A1tica-Thomas-Cormen/dp/8535236996)
+
 -----------
 **Alex Souza**
 - [Youtube](https://www.youtube.com/@alexsouzamsc)
