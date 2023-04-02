@@ -3,6 +3,8 @@ Algoritmos diversos de ML
 - Pyhton
 - R
 
+Mais sobre Machine Learning ([Aqui -> Explicações e Exemplos](https://medium.com/blog-do-zouza/o-que-%C3%A9-machine-learning-5e7e98453985))
+
 -----------
 **Alex Souza**
 - [Youtube](https://www.youtube.com/@alexsouzamsc)
