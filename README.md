@@ -1,3 +1,7 @@
+# O que é um algoritmo?
+Em ciência da computação, um algoritmo é uma sequência finita de ações executáveis que visam obter uma solução para um determinado tipo de problema.
+Segundo Dasgupta, Papadimitriou e Vazirani, “algoritmos são procedimentos precisos, não ambíguos, mecânicos, eficientes e corretos”.
+
 # Repositório de Algoritmos
 Códigos auxiliares diversos nas seguintes linguagens:
 - <a href='https://1drv.ms/u/s!AtlsFPWf_b5KvDAtbg5jNPyDN9Hv?e=a2nXLw'>JAVA</a>
@@ -6,7 +10,7 @@ Códigos auxiliares diversos nas seguintes linguagens:
 - <a href='https://github.com/aasouzaconsult/Algoritmos/tree/main/Machine%20Learning'>Machine Learning</a>
 
 # Alguns dos algoritmos que encontrará aqui...
-- Algoritmos de ordenação
+- *Algoritmos de ordenação*
   - há diversas implementações de algoritmos de ordenação, como Bubble Sort, Insertion Sort, Selection Sort, Quick Sort, Merge Sort, Heap Sort, entre outros.
 - Algoritmos de busca
   - também há implementações de algoritmos de busca, como Busca Sequencial, Busca Binária e Busca Ternária.
