@@ -46,6 +46,9 @@ Códigos auxiliares diversos nas seguintes linguagens:
 - [Código limpo: Habilidades práticas do Agile Software](https://www.amazon.com.br/C%C3%B3digo-limpo-Robert-C-Martin/dp/8576082675/)
 - [O codificador limpo: Um código de conduta para programadores profissionais](https://www.amazon.com.br/codificador-limpo-conduta-programadores-profissionais/dp/8576086476/)
 
+# Curso
+- [Curso Introdutório](https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV)
+
 -----------
 **Alex Souza**
 - [Youtube](https://www.youtube.com/@alexsouzamsc)
