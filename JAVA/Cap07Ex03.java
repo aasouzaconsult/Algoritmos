@@ -1,0 +1,34 @@
+// INSERT
+
+import java.sql.*;
+
+class Cap07Ex03 {
+	
+	public static void main (String args[]) {
+		try {
+
+		String url = "jdbc:odbc:Empresa";
+		String usuario = "";
+		String senha = "";
+						
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+		
+		Connection con;
+		con = DriverManager.getConnection(url,usuario,senha);
+
+		Statement st = con.createStatement();
+		st.executeUpdate("INSERT INTO Pedidos (CodPedido, CodCli, Descricao, Valor, DataPedido) VALUES (1001,1230,'Dicionário Aurélio Século XXI.',36.50,#16-03-2002#)");
+		
+		System.out.println("Operação realizada com sucesso.");
+
+		st.close();
+		con.close();
+		}
+
+		catch(Exception e)
+		{
+			System.out.println("Problemas na conexão. Verifique a digitação dos nomes e a existência da fonte de dados. \nRecompile e execute novamente.");
+		}
+	}
+}
+	
