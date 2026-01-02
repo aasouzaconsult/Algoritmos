@@ -1,0 +1,956 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.fgrossi.kit.net/programas/index.html -->
+<HTML><HEAD><TITLE>Programas Fonte</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<SCRIPT language=JavaScript>
+
+  if (top == self) self.location.href = '../index.html'
+
+  var mensagem = 'Clique nos nomes vermelhos para ver e copiar o fonte'
+  var inicio = mensagem.length + 35
+
+  function Abre(programa,barra) {
+    var status = ''
+	var indice = programa.lastIndexOf('.')
+	var virgula = programa.lastIndexOf(',') 
+	if (virgula < 0)
+   	  var extensao = programa.substring(indice+1,programa.length)
+	else { 
+	  var extensao = programa.substring(virgula+1,programa.length)
+	  programa = programa.substring(0,virgula)
+    }
+    if (barra == 's') status = 'status'
+    window.open(extensao+'/'+programa,'programa','scrollbars,'+status+',width=640,height=440')
+  }
+
+  function Compoe(tamanho,posicao) {
+    var saida = mensagem.substring(0,posicao)
+    for (i=1; i < tamanho; i++) saida += ' '
+    saida += mensagem.charAt(posicao)
+    window.status = saida
+    if (tamanho <= 1) {
+       ++posicao
+       if (mensagem.charAt(posicao) == ' ') ++posicao
+       tamanho = inicio-posicao        
+    } else if (tamanho > 3) tamanho *= .75
+      else --tamanho
+    if (posicao != mensagem.length) 
+       window.setTimeout('Compoe(' + tamanho + ',' + posicao + ')')
+  }
+</SCRIPT>
+
+<META content="MSHTML 6.00.2722.900" name=GENERATOR></HEAD>
+<BODY vLink=#0000ff bgColor=#ffffff onload=Compoe(inicio,0)>
+<TABLE cellSpacing=0 cellPadding=1 width=544 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Download de Todos os Programas</B> <A style="CURSOR: hand" 
+      href="http://www.fgrossi.kit.net/programas/pas/pascal.zip"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      href="http://www.fgrossi.kit.net/programas/cpp/cpp.zip"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      href="http://www.fgrossi.kit.net/programas/java/java.zip"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      href="http://www.fgrossi.kit.net/programas/rex/rexx.zip"><FONT 
+      color=red><B>Rexx</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      href="http://www.fgrossi.kit.net/programas/html/html.zip"><FONT 
+      color=red><B>html</B></FONT></A> <BR>Faz o download de todos os programas 
+      descritos nesta página </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Rola Texto</B> <A style="CURSOR: hand" 
+      onclick="Abre('rola.html','s')"><FONT 
+      color=red><B>html</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('letreiro.html')"><FONT 
+      color=red><B>html</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('uma.html','s')"><FONT color=red><B>html</B></FONT></A> 
+      <BR>Rola texto semelhante ao MARQUEE do MS Internet Explorer. Duas 
+      versões: área de STATUS e página. Compõe texto, letra a letra, na área de 
+      STATUS </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Relógio</B> <A style="CURSOR: hand" 
+      onclick="Abre('relogio.html')"><FONT color=red><B>html</B></FONT></A> 
+      <BR>Cria um relógio digital em forma de botão em qualquer lugar da página. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Calendário</B> <A style="CURSOR: hand" 
+      onclick="Abre('calendario.html')"><FONT 
+      color=red><B>html</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Calendario0.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Calendario1.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Calendario2.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Calendario3.java')"><FONT 
+      color=red><B>Applet</B></FONT></A> <BR>Cria o calendário referente ao mês 
+      corrente (JavaScript), campos da classe (normal e local), e calendário 
+      anual (aplicativo com SWING e Applet com AWT). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Data de Hoje</B> <A style="CURSOR: hand" 
+      onclick="Abre('hoje.html')"><FONT color=red><B>html</B></FONT></A> 
+      <BR>Escreve a data do dia (por extenso) em qualquer lugar de uma página. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Dias Corridos para um Evento</B> <A style="CURSOR: hand" 
+      onclick="Abre('evento.html')"><FONT color=red><B>html</B></FONT></A> 
+      <BR>Escreve o número de dias corridos até a ocorrência de um evento. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Tabela de Cores</B> <A style="CURSOR: hand" 
+      onclick="Abre('cores1.html')"><FONT 
+      color=red><B>html</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('cores2.html')"><FONT 
+      color=red><B>html</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Cores.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Mostra uma tabela de cores e modifica a cor de fundo da página quando 
+      o cursor pousa em cima de uma célula com a cor correspondente. O primeiro 
+      mostra o código da cor; o segundo mostra o nome da cor; o terceiro mostra 
+      cor correspondente a RGB. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Calculadora</B> <A style="CURSOR: hand" 
+      onclick="Abre('calculadora.html')"><FONT 
+      color=red><B>html</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Calculadora.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Calculadora com as operações aritméticas básicas (a de JavaScript é 
+      mais potente). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Applet e Aplicativo</B> <A style="CURSOR: hand" 
+      onclick="Abre('Circulos.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Janela1.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Janela2.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Janela3.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Exemplo de um programa que pode executar como applet ou como 
+      aplicativo (usa classe Janela, em várias versões). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Eventos de Janelas</B> <A style="CURSOR: hand" 
+      onclick="Abre('Windows1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Windows2.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Windows3.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Exemplifica o tratamento de events de janelas com interface, classe 
+      adaptadora, e classe interna anônima. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Classe para Leitura do Teclado</B> <A style="CURSOR: hand" 
+      onclick="Abre('Teclado.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('LeituraTeclado.java')"><FONT 
+      color=red><B>Java</B></FONT></A> <BR>Classe para leitura direta de números 
+      e strings do teclado; o segundo programa é um exemplo de uso. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Exemplos de Threads</B> <A style="CURSOR: hand" 
+      onclick="Abre('Relogio1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Relogio2.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      href="http://www.fgrossi.kit.net/programas/java/tique.au"><FONT 
+      color=red><B>Som</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Dorminhocos.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Applets: relódios digital e analógico; aplicativo: executa 4 threads 
+      que dormem por um tempo aleatório. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Eventos de Mouse</B> <A style="CURSOR: hand" 
+      onclick="Abre('Mouse1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Mouse2.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Mouse3.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Exemplos de tratamento de cliques de mouse. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Eventos de Teclado</B> <A style="CURSOR: hand" 
+      onclick="Abre('Teclado1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Teclado2.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Exemplos de tratamentos de eventos de teclado. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Retas e Mão Livre</B> <A style="CURSOR: hand" 
+      onclick="Abre('Linhas1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Linhas2.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Linhas3.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Linhas4.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Linhas5.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Exemplos de desenhos de retas e desenho à mão livre. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Bolhas</B> <A style="CURSOR: hand" 
+      onclick="Abre('Bolhas1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bolhas2.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bolhas3.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bolhas4.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bolhas5.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Letras.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Exemplos de desenhos de bolhas e letras de diversos tipos e 
+      movimentos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Jogo das Luzes</B> <A style="CURSOR: hand" 
+      onclick="Abre('Luzes1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Luzes2.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Acenda todas as luzes em uma matriz de 5X5. Uma versão usa primitivos 
+      e outra usa gerentes de layout e botões. Funcionam como applet ou como 
+      aplicativos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Movimentos de uma Bola</B> <A style="CURSOR: hand" 
+      onclick="Abre('Bola1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bola2.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bola3.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bola4.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Bola5.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Mostra uma bola deslocando-se dentro de um retângulo com buferização 
+      simples e dupla. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Segue a Execução de Applet</B> <A style="CURSOR: hand" 
+      onclick="Abre('Rastro1.java')"><FONT 
+      color=red><B>Applet</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Rastro2.java')"><FONT color=red><B>Applet</B></FONT></A> 
+      <BR>Emite mensagens nos métodos para acompahamento do funcionamento (com e 
+      sem threads). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Hierarquia de Classes</B> <A style="CURSOR: hand" 
+      onclick="Abre('Cliente.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Animais.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Figuras.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Exemplos de composição, herança, sub classes, métodos construtores, 
+      polimorfismo. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Classe para Quadriláteros</B> <A style="CURSOR: hand" 
+      onclick="Abre('Quadrilatero.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('TestaQuad.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Classe para quadriláteros; segundo programa testa a classe. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Classe para Datas</B> <A style="CURSOR: hand" 
+      onclick="Abre('Data.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('TestaData.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Classe para datas; segundo programa testa a classe. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Tempo de Contribuição para o INSS</B> <A style="CURSOR: hand" 
+      onclick="Abre('inss.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Simulação da contagem de tempo de contribuição para o INSS. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Soma de Séries</B> <A style="CURSOR: hand" 
+      onclick="Abre('series.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Vários programas que somam termos de séries usando diferentes 
+      algoritmos e implementações. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Tipo de Triângulo</B> <A style="CURSOR: hand" 
+      onclick="Abre('triangulo.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Verifica se três valores podem formar um triângulo. Escreve o tipo do 
+      eventual triângulo indicando também se é ou não um triângulo retângulo. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Valor por Extenso</B> <A style="CURSOR: hand" 
+      onclick="Abre('extenso.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Extenso.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Escreve o valor por extenso de um número inteiro (em inglês). 
+    </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Cálculo do Fatorial</B> <A style="CURSOR: hand" 
+      onclick="Abre('fatorial.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('fatorial.cpp')"><FONT color=red><B>C</B></FONT></A> 
+      <BR>Calcula o fatorial de um número inteiro não negativo. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Equação do Segundo Grau</B> <A style="CURSOR: hand" 
+      onclick="Abre('equacao.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Calcula as raízes (reais ou complexas) de uma equação do segundo grau. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Cálculo Iterativo de Pi</B> <A style="CURSOR: hand" 
+      onclick="Abre('pi.pas')"><FONT color=red><B>Pascal</B></FONT></A> <A 
+      style="CURSOR: hand" onclick="Abre('pi.rex')"><FONT 
+      color=red><B>Rexx</B></FONT></A> <BR>Calcula iterativamente a constante pi 
+      através de uma soma que converge rapidamente. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Quantidade Mínima de Selos</B> <A style="CURSOR: hand" 
+      onclick="Abre('selos1.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('selos2.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('selos1.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('selos2.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('selos1.pas')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('selos2.pas')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Calcula a quantidade mínima de selos necessária para selar uma carta 
+      assumindo que existam somente selos de 5 centavos e 3 centavos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Moda de uma População de Inteiros</B> <A style="CURSOR: hand" 
+      onclick="Abre('moda.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('moda.cpp')"><FONT color=red><B>C</B></FONT></A>&nbsp;&nbsp; 
+      <A style="CURSOR: hand" onclick="Abre('Moda.java')"><FONT 
+      color=red><B>Java</B></FONT></A> <BR>Calcula a moda de vários números 
+      inteiros entre 1 e 50 (constante que pode ser alterada). Se houver mais de 
+      uma moda, informa a maior delas. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Operações com Racionais</B> <A style="CURSOR: hand" 
+      onclick="Abre('razao.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('testrac.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Racional.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('TestaRacional.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('racional.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>ADT com as principais operações para números racionais (Pascal e Java) 
+      e funções em Rexx. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Operações com Complexos</B> <A style="CURSOR: hand" 
+      onclick="Abre('complexo.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('testacpx.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Complexo.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('TestaComplexo.java')"><FONT 
+      color=red><B>Java</B></FONT></A> <BR>ADT com as principais operações para 
+      números complexos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Dias Corridos</B> <A style="CURSOR: hand" 
+      onclick="Abre('juliano.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Calcula a quantidade de dias corridos a partir do início do ano 
+      (recursivo). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Dias entre duas Datas</B> <A style="CURSOR: hand" 
+      onclick="Abre('intervalo.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Calcula o intervalo em dias entre duas datas do mesmo ano. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Cálculo do Controle de CPFs</B> <A style="CURSOR: hand" 
+      onclick="Abre('cpf.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('cpf.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Calcula os dígitos de controle de um CPF e avisa a possibilidade de um 
+      eventual erro se o penúltimo dígito, que era usado como controle no 
+      passado, não estiver correto. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Data da Páscoa</B> <A style="CURSOR: hand" 
+      onclick="Abre('pascoa.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Pascoa.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('pascoa.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Calcula o dia e mês em que cai a Páscoa de um ano qualquer. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Cálculo do Código de Barras EAN-13 de um Produto</B> <A 
+      style="CURSOR: hand" onclick="Abre('ean13.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A> <BR>Calcula o dígito de controle para o 
+      código de barras EAN-13 de um produto de uma empresa. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Conversão de Decimal para Romano</B> <A style="CURSOR: hand" 
+      onclick="Abre('DparaR.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('DparaR.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Escreve qualquer número inteiro entre 0 e 4000 em algarismos romanos. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Conversão de Romano para Decimal</B> <A style="CURSOR: hand" 
+      onclick="Abre('RparaD.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('RparaD.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('RparaD.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Converte um número em algarismos romanos (correto) em decimal. 
+    </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Inversão das Palavras de uma Frase</B> <A style="CURSOR: hand" 
+      onclick="Abre('inversas.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('inversas.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Inversas.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Lê uma frase e reescreve-a invertendo todas as suas palavras. 
+    </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Soma dos Termos de uma P.A.</B> <A style="CURSOR: hand" 
+      onclick="Abre('somapa.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('somapa.cpp')"><FONT color=red><B>C</B></FONT></A> 
+      <BR>Calcula pela fórmula e iterações a soma dos termos de uma progresssão 
+      aritmética. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Conta Caracteres, Palavras, e Linhas Tecladas</B> <A 
+      style="CURSOR: hand" onclick="Abre('contagem.cpp')"><FONT 
+      color=red><B>C</B></FONT></A> <BR>Conta a quantidade de caracteres, 
+      palavras, e linhas tecladas. Calcula também a velocidade 
+      (caracteres/minuto) de teclagem. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Classes para Pilhas e Filas</B> <A style="CURSOR: hand" 
+      onclick="Abre('pilhaseq.pas')"><FONT 
+      color=red><B>Pilha</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('pilhalig.pas')"><FONT 
+      color=red><B>Pilha</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('pilhager.pas')"><FONT 
+      color=red><B>Pilha</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('pilhagen.pas')"><FONT 
+      color=red><B>Pilha</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('testagen.pas')"><FONT 
+      color=red><B>Pilha</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('filalig.pas')"><FONT 
+      color=red><B>Fila</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('filaseq.pas')"><FONT color=red><B>Fila</B></FONT></A> 
+      <BR>ADTs (descritos com unidades) que implementam, em alocação seqüencial 
+      e ligada, as principais operações (métodos) das estruturas PILHA e FILA 
+      usando objetos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Soma Dois Números Grandes</B> <A style="CURSOR: hand" 
+      onclick="Abre('soma.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Soma dois números inteiros com quaisquer quantidade de dígitos. 
+    </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Compara Dois Números Grandes</B> <A style="CURSOR: hand" 
+      onclick="Abre('compara.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Compara dois números inteiros com quaisquer quantidade de dígitos. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Avalia Expressão Simples</B> <A style="CURSOR: hand" 
+      onclick="Abre('polonesa.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Avalia uma expressão simples através da criação e avaliação da 
+      expressão posfixa (polonesa reversa). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Conta Quantidade de Palavras de Uma Frase</B> <A 
+      style="CURSOR: hand" onclick="Abre('palavra1.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palavra2.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palavra3.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Conta a quantidade de palavras de uma frase. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Máximo Divisor Comum</B> <A style="CURSOR: hand" 
+      onclick="Abre('mdc.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('mdc.cpp')"><FONT color=red><B>C</B></FONT></A>&nbsp;&nbsp; 
+      <A style="CURSOR: hand" onclick="Abre('mdc.rex')"><FONT 
+      color=red><B>Rexx</B></FONT></A> <BR>Calcula o Máximo Divisor Comum de 
+      dois números inteiros usando o algoritmo de Euclides. Inclui duas 
+      soluções, uma iterativa, outra recursiva. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Raiz Quadrada</B> <A style="CURSOR: hand" 
+      onclick="Abre('raiz.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('raiz.cpp')"><FONT color=red><B>C</B></FONT></A>&nbsp;&nbsp; 
+      <A style="CURSOR: hand" onclick="Abre('Raiz.java')"><FONT 
+      color=red><B>Java</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('raiz.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Calcula a raiz quadrada de um número não negativo pelo método de 
+      Newton. Inclui duas soluções, uma iterativa, outra recursiva. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Logaritmo Natural</B> <A style="CURSOR: hand" 
+      onclick="Abre('logaritmo.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('logaritmo.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('logaritmo.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Calcula o logaritmo natural de um número positivo através de um 
+      processo iterativo. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Potência com Expoentes Inteiros</B> <A style="CURSOR: hand" 
+      onclick="Abre('potencia.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('potencia.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Potencia.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Calcula a potência de uma base real elevada a um expoente inteiro. 
+      Soluções iterativa e recursiva. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Palavras Distintas de um Texto</B> <A style="CURSOR: hand" 
+      onclick="Abre('distintas.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Elimina as palavras repetidas de um texto qualquer (uso de arraus 
+      associativos). </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Primeiro e Último Nomes de Uma Pessoa</B> <A 
+      style="CURSOR: hand" onclick="Abre('nomes.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('nomes.cpp')"><FONT color=red><B>C</B></FONT></A> <BR>Lê o 
+      nome de uma pessoa e escreve o seu primeiro e último nomes. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Elimina Brancos Supérfluos de Uma Frase</B> <A 
+      style="CURSOR: hand" onclick="Abre('brancos.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A> <BR>Lê uma frase, elimina seus brancos 
+      supérfluos, e escreve a frase modificada. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Palíndromos</B> <A style="CURSOR: hand" 
+      onclick="Abre('palind1.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palind2.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palind3.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palind4.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palind5.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palind6.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('palindromo.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Palindromo.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Lê uma frase e verifica se é palíndromo. Soluções iterativas, 
+      recursiva, e com pilhas. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Uma classe para Matrizes Esparsas</B> <A style="CURSOR: hand" 
+      onclick="Abre('esparsas.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('transposta.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>ADT que implementa matrizes esparsas como listas ligadas ortogonais. 
+      Inclui um programa exemplo que lê uma matriz e constrói a transposta. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Verifica Sintaxe de Expressão</B> <A style="CURSOR: hand" 
+      onclick="Abre('expressao.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Verifica a sintaxe de uma expressão com chaves, colchetes, e 
+      parênteses. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Tempo Decorrido</B> <A style="CURSOR: hand" 
+      onclick="Abre('tempo.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('tempo.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Tempo.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Mede o tempo em segundos entre dois estados de um programa. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Números Perfeitos</B> <A style="CURSOR: hand" 
+      onclick="Abre('perfeito.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('perfeito.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Perfeito.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Verifica se um número é perfeito, ou seja, se a soma de todos os seus 
+      divisores (incluindo o 1 mas não próprio número) é igual a este número. 
+      </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Maior e Menor Nota de uma Turma</B> <A style="CURSOR: hand" 
+      onclick="Abre('maxmin.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Determina a média, a maior nota, a menor nota, a frequência com que 
+      elas ocorrem, de uma turma de alunos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Maior e Segundo Maior de uma População</B> <A 
+      style="CURSOR: hand" onclick="Abre('maiores.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A> <BR>Determina as duas maiores pessoas 
+      mais altas de uma população. Distinguem-se os casos em que estas duas 
+      podem ou não ser iguais. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Quadrado Mágico</B> <A style="CURSOR: hand" 
+      onclick="Abre('magico1.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('magico2.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('magico1.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('magico2.cpp')"><FONT color=red><B>C</B></FONT></A> 
+      <BR>Quadrado mágico é uma matriz quadrada preenchida com números inteiros 
+      a partir de 1, cuja soma de cada linha, coluna, e diagonais produz o mesmo 
+      resultado. Duas soluções simétricas. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Torres de Hanói</B> <A style="CURSOR: hand" 
+      onclick="Abre('hanoi.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('hanoi.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Hanoi.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Lista os movimentos necessários para completar o jogo das Torres de 
+      Hanói. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Números Primos</B> <A style="CURSOR: hand" 
+      onclick="Abre('primo.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('primo.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Primo.java')"><FONT color=red><B>Java</B></FONT></A> <BR>Lê 
+      um número e determina se ele é primo ou composto. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Crivo de Eratosthenes</B> <A style="CURSOR: hand" 
+      onclick="Abre('crivo.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('crivo.cpp')"><FONT 
+      color=red><B>C</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('Crivo.java')"><FONT color=red><B>Java</B></FONT></A> 
+      <BR>Cria um vetor booleano cujos elementos contêm TRUE quando os índices 
+      correspondentes forem primos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Movimentos das Peças de Xadrez</B> <A style="CURSOR: hand" 
+      onclick="Abre('xadrez.pas')"><FONT 
+      color=red><B>Pascal</B></FONT></A>&nbsp;&nbsp; <A style="CURSOR: hand" 
+      onclick="Abre('xadrez.rexx')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Mostra os movimentos possíveis de uma peça de xadrez. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Fases da Lua</B> <A style="CURSOR: hand" 
+      onclick="Abre('lua.pas')"><FONT color=red><B>Pascal</B></FONT></A> 
+      <BR>Informa a próxima fase da Lua (Nova, Quarto-Crescente, Cheia, 
+      Quarto-Minguante) usando um algoritmo que, embora não seja 100% preciso, é 
+      adequado para uso leigo. Calcula a fase em qualquer data a partir do ano 1 
+      da era cristã. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ---------------------------------------------------------------------->
+  <TR>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD>
+    <TD width=544 bgColor=#ffffc0><FONT face="trebuchet ms,arial" 
+      size=2><B>Modelo de Fila M/M/1</B> <A style="CURSOR: hand" 
+      onclick="Abre('mm1.rex')"><FONT color=red><B>Rexx</B></FONT></A> 
+      <BR>Simula um sistema de filas conforme o modelo M/M/1 e compara com os 
+      valores teóricos. </FONT></TD>
+    <TD vAlign=top width=10 bgColor=#ffffc0></TD></TR>
+  <TR>
+    <TD vAlign=top bgColor=#282828 colSpan=3 height=4></TD></TR><!------------------------------ Script ----------------------------------------------------------------------></TBODY></TABLE></BODY></HTML>

@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0044)http://www2.fundao.pro.br/articles.asp?cod=3 -->
+<HTML><HEAD><TITLE>Fundão da Computação - Java Server Pages - Introdução</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="J2EE, características" name=keywords>
+<META content="Uma visão geral do JSP" name=description>
+<META http-equiv=content-style-type content=text/css><LINK 
+href="Java Server Pages - Introdução_arquivos/fundao.css" type=text/css 
+rel=STYLESHEET>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY bottomMargin=0 vLink=#666666 aLink=#990000 link=#990000 bgColor=#ffffff 
+leftMargin=0 topMargin=0 rightMargin=0 marginwidth="0" marginheight="0"><A 
+name=PageTop></A><!-- // Logo Superior --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=left width="50%" bgColor=#eeeeee><A 
+      href="http://www2.fundao.pro.br/default.asp"><IMG height=100 
+      src="Java Server Pages - Introdução_arquivos/fundao2.gif" width=430 
+      border=0></A></TD>
+    <TD align=right width="50%" 
+  bgColor=#eeeeee><!--// Outros Banners //--></TD></TR></TBODY></TABLE><!-- // Logo Superior ---><!-- // Top Menu Bar --->
+<TABLE cellSpacing=1 cellPadding=0 width="100%" bgColor=white border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/delphi"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Delphi</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/linguagens/java"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Java</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Linux</B></FONT> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/4ano/hipermidia"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Webdesign</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/3ano/arquitetura"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Hardware</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/2ano/assembly/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Assembly</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/games.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Games</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/dotnet/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>.NET</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/geral.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Geral</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/listas.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Listas</B></FONT></A> </TD></TR></TBODY></TABLE><!-- // Top Menu Bar --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR><!--// MENU LATERAL (ESQ) -->
+    <TD vAlign=top align=left width=143 bgColor=#eeeeee><IMG height=35 
+      alt="Tudo é tão poCivio quanto Siqueira" hspace=0 
+      src="Java Server Pages - Introdução_arquivos/mensagem.gif" width=143 
+      align=center border=0 valign="center"> 
+      <TABLE cellSpacing=0 cellPadding=0 width=143 border=0><!----Áreas---->
+        <TBODY>
+        <TR>
+          <TD><IMG height=19 alt="" hspace=0 
+            src="Java Server Pages - Introdução_arquivos/artigos.gif" width=143 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/default.asp">- 
+            Home</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Algoritmos comentados e implementados';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/algoritmos">- 
+            Algoritmos</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 2º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/2ano">- Segundo 
+            Ano</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 3º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/3ano">- Terceiro Ano 
+            </A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 4º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/4ano"><NOBR>- Quarto Ano 
+            </NOBR></A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Todas as áreas abrangidas pelo Curso de Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/todas.asp">- Todas as 
+            Matérias</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Artigos, códigos e downloads sobre várias ferramentas de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/ferramentas">- 
+            Ferramentas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Amplo material sobre as mais variadas linguagens de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/linguagens/">- 
+            Linguagens</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice de todos os códigos disponíveis no site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/codigos.asp">- Códigos</A> 
+            <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Procure sobre algo no Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/busca.asp">- Busca</A> <IMG 
+            hspace=0 src="Java Server Pages - Introdução_arquivos/imgNavNew.gif" 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Listagem de sites de interesse para todos os programadores.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/bookmark.asp">- 
+            Bookmark</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Dicas de segurança.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/seguranca/default.asp">- 
+            Segurança</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja desafios interessantes';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/desafios.asp">- 
+            Desafios</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice geral do Site do Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/indice.asp">- 
+            Índice</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fórum do Fundão sobre programação';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www.forumnow.com/basic/topicos.asp?grupodiscussao=13872" 
+            target=new>- Fórum<BR>&nbsp;&nbsp;</A><A id=black 
+            onmouseover="status='Notícias para o pessoal que já saiu da universidade.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/rodo.asp">- Rodô</A><BR></TD></TR><!--//Áreas----><!----About---->
+        <TR>
+          <TD><IMG height=19 alt="" 
+            src="Java Server Pages - Introdução_arquivos/sobre.gif" width=143 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Conheça quem faz o Fundão.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/colaboradores.asp">- 
+            Colaboradores</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entenda o que é e o qual a origem do Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/whatis.asp">- O que é o 
+            Fundão?</A><BR></TD></TR><!--//About----><!----Contact---->
+        <TR>
+          <TD bgColor=#cccccc height=19>
+            <DIV align=center><FONT color=#333333><IMG height=19 alt="" 
+            src="Java Server Pages - Introdução_arquivos/contato.gif" width=143 
+            border=0></FONT></DIV></TD></TR>
+        <TR>
+          <TD>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entre em contato enviando críticas e sugestões para o site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/contato.asp">- 
+            Contato</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja os resultados das últimas pesquisas realizadas.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/pesquisa.asp">- 
+            Pesquisas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Assine nossa newsletter e receba no seu email as novidades.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/newsletter.asp">- 
+            Newsletter</A><BR></TD></TR><!--//Contact----></TBODY></TABLE><!--//Links Legais-->
+      <DIV align=center><BR>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#cccccc>
+            <TABLE cellSpacing=1 cellPadding=2 border=0>
+              <TBODY>
+              <TR>
+                <TH bgColor=#cccccc><FONT color=#333333>Links 
+              Legais</FONT></TH></TR>
+              <TR>
+                <TD bgColor=#eeeeee><IMG hspace=0 
+                  src="Java Server Pages - Introdução_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='TV ao vivo na Internet';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.alltv.com.br/" 
+                  target=_blank>AllTV</A><BR><IMG hspace=0 
+                  src="Java Server Pages - Introdução_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='Site sobre Cinema e HQs';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.universohq.com/" target=_blank>Universo 
+                  HQ</A><BR><IMG hspace=0 
+                  src="Java Server Pages - Introdução_arquivos/pfeil_black(1).gif" 
+                  border=0><A onmouseover="status='Cinema';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.e-pipoca.com.br/" 
+                  target=_blank>e-pipoca</A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><BR 
+      clear=all><BR><!--//Links Legais--><BR><BR><BR><BR><BR></TD><!--// MENU LATERAL (ESQ) --><!--// REGIAO CENTRAL ------>
+    <TD vAlign=top width="100%" colSpan=2>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" align=center border=0 
+      valign="top">
+        <TBODY>
+        <TR><!-- // Primeira Coluna do Meio //-->
+          <TD vAlign=top>&nbsp; <BR></TD><!-- // Primeira Coluna do Meio //--><!-- // Segunda Coluna do Meio //-->
+          <TD vAlign=top align=middle>
+            <TABLE width="97%" border=0 valign="top">
+              <TBODY>
+              <TR>
+                <TD vAlign=top height=400><BR><A 
+                  href="http://www2.fundao.pro.br/resources/4ano/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>4º Ano</A> » <A 
+                  href="http://www2.fundao.pro.br/resources/4ano/hipermidia/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>Hipermídia</A></B></FONT> 
+                  </B></FONT><FONT face=Tahoma color=#990000 size=4><B>» Java 
+                  Server Pages - Introdução</B></FONT></FONT> 
+                  <TABLE width="95%" align=left border=0>
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=#990000 
+height=2></TD></TR></TBODY></TABLE><BR><BR>
+                  <TABLE width="100%" align=right border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>Uma visão geral do JSP <BR><BR>
+                        <DIV align=right>Julho/2002<FONT 
+                        color=white>&nbsp;&nbsp;&nbsp;</FONT></DIV></TD></TR></TBODY></TABLE><BR><BR><BR><BR><BR><!-- Listagem //-->
+                  <TABLE width="95%" align=center border=0>
+                    <TBODY>
+                    <TR bgColor=#ffffff height=30>
+                      <TD width="100%"><FONT size=2><B>JavaServer Pages 
+                        (JSP)</B> é uma especificação da Sun Microsystems que 
+                        combina Java e HTML para fornecer conteúdo dinâmico para 
+                        páginas Web. Quando a intenção é criar conteúdo 
+                        dinâmico, JSPs são mais convenientes de se escrever do 
+                        que servlets HTTP porque elas permitem que você encaixe 
+                        código Java diretamente em suas páginas HTML, em 
+                        contraste com os servlets, nos quais você coloca HTML 
+                        dentro do código Java. JSP é parte do Java 2 Enterprise 
+                        Edition (J2EE). <BR><BR>JSP permite que você separe o 
+                        conteúdo dinâmico de uma página Web de sua apresentação. 
+                        Ele satisfaz dois tipos diferentes de desenvolvedores: 
+                        desenvolvedores HTML, que são responsáveis pelo projeto 
+                        gráfico da página, e desenvolvedores Java, que tratam do 
+                        desenvolvimento de software que criará o conteúdo 
+                        dinâmico. <BR><BR>Para os amantes do XML, boas notícias: 
+                        as páginas JSP podem ser escritas em XML bem-formado 
+                        através da utilização de XSLT. (Isto significa que JSP 
+                        pode fazer uso total das características do XML e de 
+                        todas as ferramentas e suporte que existem para 
+                        ele.)<BR><BR>Como JSP é parte do J2EE padrão, você pode 
+                        desenvolver JPSs para várias plataformas. Além disso, 
+                        diversas empresas e desenvolvedores de aplicações podem 
+                        fornecer componentes JavaBean e definir tags JSP 
+                        personalizadas que podem ser referenciadas de uma página 
+                        JSP. <BR><BR>
+                        <H3>As Vantagens do JSP</H3>JSP possui várias vantagens 
+                        sobre a maioria de seus "concorrentes". Aqui estão 
+                        algumas delas <BR><BR><B>Versus Active Server Pages 
+                        (ASP)</B> <BR><BR>ASP é uma tecnologia concorrente da 
+                        Microsoft. As vantagens do JSP são duas. Primeiro, a 
+                        parte dinâmica é escrita em Java, e não VBScript ou 
+                        outra linguagem específica do ASP, sendo assim mais 
+                        poderosa e mais adaptada para aplicações complexas que 
+                        requerem componentes reusáveis. Segundo, JSP é portável 
+                        para outros sistemas operacionais e servidores Web; você 
+                        não fica preso ao Windows NT/2000/XP e IIS. Você poderia 
+                        usar o mesmo argumento ao comparar JSP com ColdFusion; 
+                        com JSP você pode usar Java e não está amarrado a um 
+                        produto para servidor particular. <BR><BR><B>Versus 
+                        PHP</B> <BR><BR>PHP é uma linguagem de scripting 
+                        embutida em HTML gratuita e de código aberto que é um 
+                        pouco similar tanto ao ASP quanto ao JSP. A vantagem do 
+                        JSP é que a parte dinâmica é escrita em Java, que você 
+                        provavelmente já conhece, que já tem uma API abrangente 
+                        para rede, acesso a banco de dados, objetos 
+                        distribuídos, e outras facilidades, enquanto PHP requer 
+                        a aprendizagem de toda uma nova linguagem. 
+                        <BR><BR><B>Versus Servlets Puros</B> <BR><BR>JSP não 
+                        fornece capacidades que não pudessem a princípio ser 
+                        obtidas com um servlet. De fato, "por baixo do pano" 
+                        documentos JSP são traduzidos automaticamente em 
+                        servlets. Mas é mais conveniente escrever (e modificar!) 
+                        HTML tradicional do que ter um zilhão de instruções 
+                        println que geram o HTML. Além disso, separando a 
+                        apresentação do conteúdo, você pode colocar pessoas 
+                        diferentes em tarefas diferentes: seu web designer pode 
+                        construir o HTML usando ferramentas familiares e deixar 
+                        espaços para seus programadores de servlets inserirem 
+                        conteúdo dinâmico. <BR><BR><B>Versus Server-Side 
+                        Includes (SSI)</B><BR><BR>SSI é uma tecnologia bastante 
+                        usada para inserir peças definidas externamente dentro 
+                        de uma página Web estática. JSP é melhor porque você tem 
+                        um rico conjunto de ferramentas para construir estas 
+                        peças externas e tem mais opções com relação ao estágio 
+                        da resposta HTTP na qual esta peça realmente está 
+                        inserida. Além disso, SSI é realmente voltado apenas 
+                        para inclusões simples, e não para programas "reais" que 
+                        usam dados, fazem conexões a bancos de dados, e outras 
+                        coisas do tipo. <BR><BR><B>Versus 
+                        JavaScript</B><BR><BR>JavaScript, que é completamente 
+                        diferente da linguagem de programação Java, é geralmente 
+                        usado para gerar HTML dinâmico no cliente, construir 
+                        partes da página web a medida que o browser carrega o 
+                        documento. Esta é uma capacidade útil mas trata apenas 
+                        situações onde a informação dinâmica está baseada no 
+                        ambiente do cliente. Com a exceção de cookies, os dados 
+                        de uma requisição HTTP não estão disponíveis para 
+                        rotinas JavaScript do lado do cliente. E, uma vez que 
+                        JavaScript carece de rotinas para programação em rede, o 
+                        código JavaScript no cliente não pode acessar recursos 
+                        do lado do servidor como bancos de dados, catálogos, 
+                        etc. JavaScript também pode ser usado no servidor, mais 
+                        notavelmente em servidores Netscape e como uma linguagem 
+                        de scripting para IIS. Java é muito mais poderoso, 
+                        flexível, confiável e portável.<BR><BR><B>Versus HTML 
+                        Estático</B><BR><BR>HTML regular, é claro, não contém 
+                        informação dinâmica, assim páginas HTML estáticas não 
+                        podem se basear em entradas dos usuários ou em fontes de 
+                        dados no servidor. <BR><BR><BR>
+                        <CENTER><A 
+                        href="javascript:history.go(-1);">Voltar</A></CENTER><BR><BR><BR></FONT></TD></TR></TBODY></TABLE><!-- Listagem //--></TD></TR></TBODY></TABLE></TD><!-- // Segunda Coluna do Meio //--><!-- // Terceira Coluna do Meio //-->
+          <TD vAlign=top width=8><BR><BR clear=all><BR>
+            <DIV align=center> </DIV><BR></TD><!-- // Terceira Coluna do Meio //--><!--// Faixa Divisória //-->
+          <TD width=1 bgColor=#eeeeee><IMG height=1 
+            src="Java Server Pages - Introdução_arquivos/single_pix.gif" 
+            width=1> </TD><!--// Faixa Divisória //--></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=2><!----Bottom Banner---->&nbsp; <!--//Bottom Banner----></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=left width="99%" bgColor=#ffffff colSpan=2><A 
+            onmouseover="status='Voltar para cima';return true;" 
+            onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/articles.asp?cod=3#PageTop"><IMG 
+            height=15 alt="Voltar para cima" hspace=5 
+            src="Java Server Pages - Introdução_arquivos/up_darkgray.jpeg" 
+            width=14 vspace=5 border=0></A><BR></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#eeeeee colSpan=2>Copyright © 
+            1999,2003 Fundão Inc. - All rights reserved. </TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#ffffff>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=3><FONT 
+            color=white>&nbsp; 
+</FONT></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>

@@ -1,0 +1,690 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0046)http://www2.fundao.pro.br/articles.asp?cod=145 -->
+<HTML><HEAD><TITLE>Fundão da Computação - Design Patterns Fundamentais do J2EE</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="" name=keywords>
+<META 
+content="Quatros dos principais design patterns utilizados em aplicações J2EE" 
+name=description>
+<META http-equiv=content-style-type content=text/css><LINK 
+href="Design Patterns Fundamentais do J2EE_arquivos/fundao.css" type=text/css 
+rel=STYLESHEET>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY bottomMargin=0 vLink=#666666 aLink=#990000 link=#990000 bgColor=#ffffff 
+leftMargin=0 topMargin=0 rightMargin=0 marginwidth="0" marginheight="0"><A 
+name=PageTop></A><!-- // Logo Superior --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=left width="50%" bgColor=#eeeeee><A 
+      href="http://www2.fundao.pro.br/default.asp"><IMG height=100 
+      src="Design Patterns Fundamentais do J2EE_arquivos/fundao2.gif" width=430 
+      border=0></A></TD>
+    <TD align=right width="50%" 
+  bgColor=#eeeeee><!--// Outros Banners //--></TD></TR></TBODY></TABLE><!-- // Logo Superior ---><!-- // Top Menu Bar --->
+<TABLE cellSpacing=1 cellPadding=0 width="100%" bgColor=white border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/delphi"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Delphi</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/linguagens/java"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Java</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Linux</B></FONT> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/4ano/hipermidia"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Webdesign</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/3ano/arquitetura"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Hardware</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/2ano/assembly/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Assembly</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/games.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Games</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/dotnet/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>.NET</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/geral.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Geral</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/listas.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Listas</B></FONT></A> </TD></TR></TBODY></TABLE><!-- // Top Menu Bar --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR><!--// MENU LATERAL (ESQ) -->
+    <TD vAlign=top align=left width=143 bgColor=#eeeeee><IMG height=35 
+      alt="Tudo é tão poCivio quanto Siqueira" hspace=0 
+      src="Design Patterns Fundamentais do J2EE_arquivos/mensagem.gif" width=143 
+      align=center border=0 valign="center"> 
+      <TABLE cellSpacing=0 cellPadding=0 width=143 border=0><!----Áreas---->
+        <TBODY>
+        <TR>
+          <TD><IMG height=19 alt="" hspace=0 
+            src="Design Patterns Fundamentais do J2EE_arquivos/artigos.gif" 
+            width=143 border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/default.asp">- 
+            Home</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Algoritmos comentados e implementados';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/algoritmos">- 
+            Algoritmos</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 2º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/2ano">- Segundo 
+            Ano</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 3º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/3ano">- Terceiro Ano 
+            </A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 4º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/4ano"><NOBR>- Quarto Ano 
+            </NOBR></A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Todas as áreas abrangidas pelo Curso de Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/todas.asp">- Todas as 
+            Matérias</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Artigos, códigos e downloads sobre várias ferramentas de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/ferramentas">- 
+            Ferramentas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Amplo material sobre as mais variadas linguagens de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/linguagens/">- 
+            Linguagens</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice de todos os códigos disponíveis no site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/codigos.asp">- Códigos</A> 
+            <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Procure sobre algo no Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/busca.asp">- Busca</A> <IMG 
+            hspace=0 
+            src="Design Patterns Fundamentais do J2EE_arquivos/imgNavNew.gif" 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Listagem de sites de interesse para todos os programadores.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/bookmark.asp">- 
+            Bookmark</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Dicas de segurança.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/seguranca/default.asp">- 
+            Segurança</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja desafios interessantes';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/desafios.asp">- 
+            Desafios</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice geral do Site do Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/indice.asp">- 
+            Índice</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fórum do Fundão sobre programação';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www.forumnow.com/basic/topicos.asp?grupodiscussao=13872" 
+            target=new>- Fórum<BR>&nbsp;&nbsp;</A><A id=black 
+            onmouseover="status='Notícias para o pessoal que já saiu da universidade.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/rodo.asp">- Rodô</A><BR></TD></TR><!--//Áreas----><!----About---->
+        <TR>
+          <TD><IMG height=19 alt="" 
+            src="Design Patterns Fundamentais do J2EE_arquivos/sobre.gif" 
+            width=143 border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Conheça quem faz o Fundão.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/colaboradores.asp">- 
+            Colaboradores</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entenda o que é e o qual a origem do Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/whatis.asp">- O que é o 
+            Fundão?</A><BR></TD></TR><!--//About----><!----Contact---->
+        <TR>
+          <TD bgColor=#cccccc height=19>
+            <DIV align=center><FONT color=#333333><IMG height=19 alt="" 
+            src="Design Patterns Fundamentais do J2EE_arquivos/contato.gif" 
+            width=143 border=0></FONT></DIV></TD></TR>
+        <TR>
+          <TD>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entre em contato enviando críticas e sugestões para o site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/contato.asp">- 
+            Contato</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja os resultados das últimas pesquisas realizadas.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/pesquisa.asp">- 
+            Pesquisas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Assine nossa newsletter e receba no seu email as novidades.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/newsletter.asp">- 
+            Newsletter</A><BR></TD></TR><!--//Contact----></TBODY></TABLE><!--//Links Legais-->
+      <DIV align=center><BR>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#cccccc>
+            <TABLE cellSpacing=1 cellPadding=2 border=0>
+              <TBODY>
+              <TR>
+                <TH bgColor=#cccccc><FONT color=#333333>Links 
+              Legais</FONT></TH></TR>
+              <TR>
+                <TD bgColor=#eeeeee><IMG hspace=0 
+                  src="Design Patterns Fundamentais do J2EE_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='TV ao vivo na Internet';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.alltv.com.br/" 
+                  target=_blank>AllTV</A><BR><IMG hspace=0 
+                  src="Design Patterns Fundamentais do J2EE_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='Site sobre Cinema e HQs';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.universohq.com/" target=_blank>Universo 
+                  HQ</A><BR><IMG hspace=0 
+                  src="Design Patterns Fundamentais do J2EE_arquivos/pfeil_black(1).gif" 
+                  border=0><A onmouseover="status='Cinema';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.e-pipoca.com.br/" 
+                  target=_blank>e-pipoca</A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><BR 
+      clear=all><BR><!--//Links Legais--><BR><BR><BR><BR><BR></TD><!--// MENU LATERAL (ESQ) --><!--// REGIAO CENTRAL ------>
+    <TD vAlign=top width="100%" colSpan=2>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" align=center border=0 
+      valign="top">
+        <TBODY>
+        <TR><!-- // Primeira Coluna do Meio //-->
+          <TD vAlign=top>&nbsp; <BR></TD><!-- // Primeira Coluna do Meio //--><!-- // Segunda Coluna do Meio //-->
+          <TD vAlign=top align=middle>
+            <TABLE width="97%" border=0 valign="top">
+              <TBODY>
+              <TR>
+                <TD vAlign=top height=400><BR><A 
+                  href="http://www2.fundao.pro.br/resources/4ano/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>4º Ano</A> » <A 
+                  href="http://www2.fundao.pro.br/resources/4ano/engsoft/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>Engenharia de 
+                  Software</A></B></FONT> </B></FONT><FONT face=Tahoma 
+                  color=#990000 size=4><B>» Design Patterns Fundamentais do 
+                  J2EE</B></FONT></FONT> 
+                  <TABLE width="95%" align=left border=0>
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=#990000 
+height=2></TD></TR></TBODY></TABLE><BR><BR>
+                  <TABLE width="100%" align=right border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>Quatros dos principais design patterns utilizados em 
+                        aplicações J2EE <BR><BR>
+                        <DIV align=right>Março/2003<FONT 
+                        color=white>&nbsp;&nbsp;&nbsp;</FONT></DIV></TD></TR></TBODY></TABLE><BR><BR><BR><BR><BR><!-- Listagem //-->
+                  <TABLE width="95%" align=center border=0>
+                    <TBODY>
+                    <TR bgColor=#ffffff height=30>
+                      <TD width="100%"><FONT size=2>Aplicações empresariais 
+                        são complexas, isto é um fato. Diariamente 
+                        desenvolvedores, arquitetos, gerentes de projeto e 
+                        usuários são forçados a lidar com estruturas de dados 
+                        complexas, alterações em regras de negócio, mudanças de 
+                        necessidades dos usuários e novas tecnologias. 
+                        Naturalmente, os desenvolvedores geralmente têm menos 
+                        tempo e menos recursos do que precisariam (ou gostariam) 
+                        para enfrentar tudo isso. <BR><BR>Existem várias formas 
+                        possívels de tratar tal complexidade, mas todas podem 
+                        ser agrupadas em dois princípios: utilizar abordagens 
+                        comprovadamente funcionais e antecipar necessidades 
+                        futuras. Em ambos os casos, existem técnicas comuns que 
+                        transcende um sistema individual. Essas técnicas são 
+                        conhecidas como <I>design patterns</I> (<I><A 
+                        href="http://www2.fundao.pro.br/articles.asp?cod=144">para 
+                        saber mais</A></I>). <BR><BR>Esses patterns podem ser 
+                        usados repetidas vezes, facilitando a incorporação da 
+                        experiência de desenvolvimentos anteriores em novos 
+                        projetos. Patterns também fornecem uma linguagem comum 
+                        para a discussão de arquitetura de software em um nível 
+                        mais elevado (apenas dizer que um sistema implementa o 
+                        pattern <I>factory</I>, por exemplo, pode comunicar uma 
+                        decisão de projeto muito mais rapidamente e mais 
+                        precisamente do que uma explicação complexa, assumindo 
+                        que ambos os lados saibam o que é o padrão factory. 
+                        <BR><BR>Com a utilização cada vez maior da linguagem 
+                        Java e principalmente de toda a plataforma J2EE os 
+                        design patterns têm se tornado mais populares, uma vez 
+                        que para construir uma aplicação de grande porte 
+                        utilizando J2EE é imprescindível a utilização de 
+                        patterns adequados. Existem muitos patterns para J2EE. 
+                        Neste texto falaremos de apenas quatro deles, que têm 
+                        por objetivo aumentar a modularidade e a escalabilidade 
+                        das aplicações J2EE. Para saber mais sobre os design 
+                        patterns do J2EE adquira o livro <A 
+                        href="http://www.submarino.com.br/books_productdetails.asp?Query=ProductPage&amp;ProdTypeId=1&amp;ProdId=169981&amp;ST=SE" 
+                        target=new>Core J2EE Patterns</A> <BR><BR>
+                        <H3>Camadas da Aplicação</H3>Aplicações empresariais 
+                        modernas geralmente mantêm no mínimo três camadas: um 
+                        cliente, um servidor middleware e um banco de dados. 
+                        <BR><BR>No mundo do J2EE, existem geralmente quatro 
+                        camadas: um cliente, uma aplicação Web construída ou com 
+                        servlets Java ou com JavaServer pages (JSP), uma camada 
+                        de lógica de negócio construíada em Enterprise JavaBeans 
+                        (EJB) e uma camada de persistência que acessa um banco 
+                        de dados relacional. <BR><BR>Projetos em multi-camadas 
+                        resolvem vários problemas, mas também podem criar alguns 
+                        outros. Separar interface do usuário, lógica de negócio 
+                        e dados da aplicação torna o projeto como um todo mais 
+                        fácil de ser compreendido e permite que diferentes 
+                        equipes trabalhem em paralelo em cima de diferentes 
+                        componentes, mas há um lado ruim: aumenta o overhead de 
+                        comunicação entre as camadas. A plataforma J2EE é 
+                        basicamente um modelo de aplicação distribuído em 
+                        multi-camadas no qual a lógica da aplicação é dividida 
+                        em componentes de acordo com sua função. Isto permite 
+                        que vários componentes da aplicação que compõem uma 
+                        aplicação J2EE sejam instalados em máquinas diferentes. 
+                        Contudo, se não tomar o devido cuidado com o J2EE ou 
+                        qualquer outra arquitetura multi-camadas, você acabará 
+                        com um sistema que é muitas vezes mais lento do que um 
+                        sistema de duas camadas. <BR><BR>Projetos em 
+                        multi-camadas possuem mais componentes para serem 
+                        monitorados e o sucesso de muitos projetos em 
+                        multi-camadas se enforcam ao tentar dividir as tarefas 
+                        em componentes apropriados e ao organizar 
+                        apropriadamente os resultados. Os patterns a seguir 
+                        ajudarão você a melhorar a performance de seus sistemas 
+                        em multi-camadas e torná-los mais fáceis de se manter ao 
+                        reduzir a complexidade. Como todos eles estão 
+                        relacionados ao particionamento da aplicação, esses são 
+                        patterns essenciais para quase todas as aplicações J2EE 
+                        e altamente relevantes para todos os desenvolvedores. O 
+                        pattern <B>Model-View-Controller (MVC)</B> reforça um 
+                        projeto modular e de fácil manutenção e força a 
+                        separação de camadas. O <B>session façade</B> organiza a 
+                        lógica de negócio para o cliente. O <B>Data Access 
+                        Object (DAO)</B> fornece uma interface flexível entre a 
+                        lógica de negócio e as fontes de dados reais. 
+                        Finalmente, o <B>Data Transfer Object (DTO)</B>, também 
+                        conhecido como um <B>value object</B>, facilita a 
+                        comunicação entre as camadas. <BR><BR>
+                        <H3>Model-View-Controller</H3>O design pattern MVC 
+                        permite que você separe o modelo de dados das várias 
+                        formas que o dado pode ser acessado e manipulado. Um 
+                        sistema MVC é dividido em um modelo de dados, um 
+                        conjunto de visões e um conjunto de controladores. As 
+                        visões fornecem a interface do usuário e, em uma 
+                        aplicação padrão, consistem de JSP. O controlador é 
+                        geralmente implementado como um ou mais servlets Java. O 
+                        modelo consiste de ou EJB ou código que fornece acesso 
+                        direto ao banco de dados relacional. <BR><BR>MVC é útil 
+                        principalmente para aplicações grandes e distribuídas 
+                        onde dados idênticos são visualizados e manipulados de 
+                        formas variadas. Como o MVC facilita a divisão de 
+                        trabalho por conjuntos de habilidades, este pattern é 
+                        bastante adequado para empresas de desenvolvimento que 
+                        suportam desenvolvimento modular e concorrente com 
+                        muitos desenvolvedores. Promovendo a portabilidade de 
+                        interfaces e do back-end, o pattern MVC também torna 
+                        fácil testar e manter suas aplicações. A chave para o 
+                        MVC é a separação de responsabilidades. As visões podem 
+                        usar o modelo de dados para exibir resultados, mas elas 
+                        não são responsáveis por atualizar o banco de dados. Os 
+                        controladores são responsáveis por selecionar uma visão 
+                        apropriada e por fazer alterações no modelo de dados. O 
+                        modelo, por sua vez, é responsável por representar os 
+                        dados base da aplicação. Algumas vezes o modelo de dados 
+                        também incluirá a lógica de negócio (as regras para 
+                        manipular os dados de negócio), e algumas vezes a lógica 
+                        de negócio existirá na camada do controlador. <BR><BR>Na 
+                        verdade existem quatro componentes em uma aplicação MVC, 
+                        não três, já que o cliente é uma parte integrante de 
+                        toda a operação. O cliente envia uma requisição para o 
+                        servlet, que interaje com o modelo de dados para efetuar 
+                        a ação requisitada pelo cliente. O controlador então 
+                        passa informações para uma visão, que as formata de 
+                        acordo com as necessidades do cliente. Dependendo dos 
+                        tipos de clientes suportados, uma atividade pode ter 
+                        muitas visões. Desacoplar as visões do processo de 
+                        requisição torna mais fácil criar novas visões para 
+                        novos formatos. Uma aplicação poderia apresentar uma 
+                        interface HTML e depois adicionar visões WML (para 
+                        dispositivos wireless) e visões XML (para Web services) 
+                        futuramente. <BR><BR>A melhor forma de ver o MVC em ação 
+                        é olhar para algum código. Este exemplo simples inclui 
+                        um servlet controlador, um modelo de dados EJB e uma 
+                        visão JSP. O cliente faz uma requisição para o servlet, 
+                        pedindo para ele criar uma nova conta de cliente. O 
+                        servlet cria a nova entidade EJB para o cliente e passa 
+                        o objeto resultante para o arquivo JSP. <BR><BR>
+                        <TABLE width="95%" border=1>
+                          <TBODY>
+                          <TR>
+                            <TD><B>ClienteController.java</B> </TD></TR>
+                          <TR>
+                            <TD><PRE><FONT color=darkblue>package exemplo;
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+import javax.naming.*;
+import java.util.*;
+import java.io.IOException;
+
+public class ClienteController extends HttpServlet
+{
+  protected void doPost(HttpServletRequest req, 			
+				HttpServletResponse res) 
+    throws ServletException, IOException {
+
+    try
+    {
+        Hashtable env = new Hashtable();
+        env.put(Context.INITIAL_CONTEXT_FACTORY, 
+           	"com.evermind.server.rmi.RMIInitialContextFactory");
+        env.put(Context.SECURITY_PRINCIPAL, "admin");
+        env.put(Context.SECURITY_CREDENTIALS, "welcome");
+        env.put(Context.PROVIDER_URL, 		
+				"ormi://localhost:23892/current-workspace-app");
+        Context ctx = new InitialContext(env);
+        ClienteEJBHome clienteEJBHome = 
+				(ClienteEJBHome)ctx.lookup("ClienteEJB");
+        ClienteEJB clienteEJB;
+
+        clienteEJB = clienteEJBHome.create();
+        
+		  clienteEJB.setName(req.getParameter("_NomeDoNovoCliente"));
+        req.setAttribute("cliente", clienteEJB);
+        req.getRequestDispatcher("/cliente.jsp").forward(req, res);
+        
+    } 
+    catch(Throwable ex) 
+    {
+        req.setAttribute("Mensagem de Erro", "Erro do EJB: " + 
+				ex.getMessage());
+        req.getRequestDispatcher("/error.jsp").forward(req, res);
+    }
+  }
+}
+</FONT></PRE></TD></TR></TBODY></TABLE><BR><BR>
+                        <TABLE width="95%" border=1>
+                          <TBODY>
+                          <TR>
+                            <TD><B>ClienteEJB.java</B> </TD></TR>
+                          <TR>
+                            <TD><PRE><FONT color=darkblue>package exemplo;
+import javax.ejb.EJBObject;
+import java.rmi.RemoteException;
+
+public interface ClienteEJB extends EJBObject 
+{
+  String getNome() throws RemoteException;
+  void setNome(String novoNome) throws RemoteException;
+
+  String getCidade() throws RemoteException;
+  void setCidade(String novaCidade) throws RemoteException;
+
+  String getEstado() throws RemoteException;
+  void setEstado(String novoEstado) throws RemoteException;
+
+  Boolean creditoAprovado() throws RemoteException;
+  void setCreditoAprovado(Boolean novaAprovacaoDeCredito) throws RemoteException;
+}
+
+</FONT></PRE></TD></TR></TBODY></TABLE><BR><BR>
+                        <TABLE width="95%" border=1>
+                          <TBODY>
+                          <TR>
+                            <TD><B>cliente.jsp</B> </TD></TR>
+                          <TR>
+                            <TD><PRE><FONT color=darkblue>&lt;%@ page contentType="text/html;charset=windows-1252"%&gt;
+&lt;HTML&gt;
+&lt;H1&gt;Saudações,
+&lt;% exemplo.ClienteEJB cliente = 
+             (exemplo.ClienteEJB)request.getAttribute("cliente");
+   out.println(cliente.getNome()); %&gt;
+&lt;/H1&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</FONT></PRE></TD></TR></TBODY></TABLE><BR><BR>O exemplo 
+                        mostrado nos códigos tira vantagem de muitas 
+                        características do EJB e da API de Servlets do Java para 
+                        facilitar a transação entre componentes. O controlador 
+                        invoca a visão usando um despachador de requisições para 
+                        encaminhar a requisição do cliente para um arquivo JSP e 
+                        ajusta os atributos da requisição para passar para 
+                        frente informações sobre o sucesso ou a falha de seu 
+                        processamento. A visão então tem acesso direto ao EJB, 
+                        sem ter que carregar ele separadamente ou incluir a 
+                        lógica para povoá-lo. <BR><BR>
+                        <H3>Session Façade</H3>Criar uma aplicação EJB 
+                        controlável requer quebrar a camada do EJB em duas 
+                        partes. O modelo de dados é construído via entity beans 
+                        e geralmente corresponde à camada de banco de dados 
+                        base. A lógica de negócio (que em aplicações antigas 
+                        poderia ter sido mantida em uma aplicação cliente ou em 
+                        stored procedures dentro do banco de dados) é mantida 
+                        nos session beans. Em muitas circunstâncias, clientes 
+                        acessarão session beans que efetuarão ações sobre entity 
+                        beans e retornarão resultados apropriados para a 
+                        aplicação cliente. Geralmente faz sentido definir 
+                        session beans por questões de reutilização; em vez de 
+                        construir um session bean para a transação "comprar um 
+                        carro", você poderia construir beans para carregar 
+                        clientes, alterar estoque, ou requisitar alguma 
+                        personalização à fábrica, por exemplo. <BR><BR>É claro, 
+                        é possível adicionar lógica de negócio diretamente a um 
+                        entity bean, mas isto deve ser minimizado. Não existe 
+                        uma boa razão para objetos que representem clientes 
+                        tenham algum conhecimento relativo a objetos que 
+                        representam carros, mas se um método buyCar() é 
+                        integrado a um objeto cliente, então isto é exatamente o 
+                        que vai acontecer. O objeto cliente fatalmente se 
+                        tornará carregado de métodos especializados, tornando o 
+                        reuso genérico mais difícil. <BR><BR>Tirar a lógica de 
+                        negócio dos entity beans e colocá-la na aplicação 
+                        cliente também é problemático, já que cada aplicação 
+                        cliente (além de fornecer uma interface para o usuário) 
+                        deve incluir todas as regras de negócio para modificar a 
+                        estrutura do entity bean, e deve ter conhecimento de 
+                        cada entity bean mesmo que tenha sido invocado 
+                        remotamente na transação. A separação das camadas 
+                        cliente e de negócio efetivamente desaparece, e qualquer 
+                        alteração nas regras de negócio irá requerer a 
+                        atualização de todos os clientes. <BR><BR>Mesmo com a 
+                        lógica de negócio distribuída em vários session beans, 
+                        ainda há o problema do overhead da rede. Clientes EJB 
+                        acessam o servidor EJB da rede, e chamadas na rede 
+                        significam atrasos. Acessar um objeto local é sempre 
+                        muito mais rápido do que acessar um objeto remoto, e 
+                        cada entity bean ou session bean que um cliente usa 
+                        resulta em uma outra chamada remota. <BR><BR>A solução é 
+                        empacotar transações de nível mais alto em uma 
+                        <I>session façade</I>. A session façade é um session 
+                        bean que organiza um conjunto de métodos de negócio 
+                        relacionados. A session façade é responsável por acessar 
+                        recursos, atualizar dados e realizar a transação com uma 
+                        interação limitada com o cliente. O propósito da session 
+                        façade é fornecer uma interface simples e unificada para 
+                        todos os clientes da aplicação. Os clientes podem usar a 
+                        session façade como um ponto de entrada único para os 
+                        dados e para a funcionalidade de uma aplicação. 
+                        <BR><BR>Centralizando o maior número possível de 
+                        operações no servidor, a session façade pode tirar 
+                        vantagem total do EJB 2.0, incluindo interfaces locais 
+                        de EJB's. No EJB 2.0, quando um bean interage com um 
+                        outro bean no mesmo servidor, ele pode acessar aquele 
+                        bean diretamente chamando os métodos apropriados, em vez 
+                        de realizar cada invocação de método através da rede. 
+                        Esta abordagem pode render ganhos de performance 
+                        substanciais, particularmente em casos onde o bean está 
+                        interagindo com múltiplos session e entity beans. 
+                        <BR><BR>À primeira vista, é difícil de dizer o que 
+                        diferencia uma session façade de um session bean normal. 
+                        Além disso, ambos são implementados como session beans, 
+                        e desta forma, da perspectiva do cliente, parecem a 
+                        mesma coisa. Uma session façade fornece uma camada de 
+                        controle para a lógica de negócio de uma aplicação. Uma 
+                        session façade geralmente fornecerá suporte para um ou 
+                        mais casos de uso relacionados da aplicação, enquanto 
+                        que um session bean poderia suportar ou um caso de uso 
+                        ou um componente de um caso de uso. Diferentes 
+                        aplicações clientes podem usar diferentes conjuntos de 
+                        session façades para interagir com o mesmo modelo de 
+                        dados. <BR><BR>Isto faz da session façade um local ideal 
+                        para tratar de transações, já que grupos de atividades 
+                        podem ser facilmente declarados como parte de um único 
+                        método de negócio. E ao minimizar as interfaces 
+                        apresentadas ao cliente, a camada do servidor fica mais 
+                        fácil de se manter, já que está sujeita a menos 
+                        dependências externas. <BR><BR>Em aplicações menores, 
+                        session façades podem efetivamente agir como um 
+                        substituto do front-end para os session beans e entity 
+                        beans que compõem o modelo de dados. Quando se 
+                        desenvolve aplicações simples, expor todo o modelo de 
+                        EJBs diretamente para o cliente faz algum sentido; é 
+                        melhor considerar o uso de session façades se existe 
+                        alguma chance da sua aplicação expandir ou se você 
+                        expera que o modelo de dados de back-end seja alterado. 
+                        <BR><BR>
+                        <H3>Data Access Object</H3>Pense nos recursos que uma 
+                        aplicação pode precisar acessar. Bancos relacionais são 
+                        relativamente fáceis de se tratar: EJBs CMP 
+                        (Container-Managed Persistence) podem fazer a maior 
+                        parte do trabalho para você, mapeando transparentemente 
+                        os campos de um EJB para tabelas em um banco de dados 
+                        base. Mas o que você deve fazer com relação a 
+                        armazenamento em disco, arquivos XML, sistemas 
+                        proprietários e Web services? Ou para sistemas que 
+                        utilizam um banco relacional mas não usam EJB totalmente 
+                        ou usam EJB's BMP (Bean-Managed Persistence)? Ou quando 
+                        múltiplas aplicações precisam acessar um modelo de 
+                        dados? Ou quando os dados vêm de uma fonte hoje e de 
+                        outra amanhã? <BR><BR>O pattern DAO é uma solução 
+                        simples para essas questões. Com esta solução, 
+                        desenvolvedores implementam um objeto que é unicamente 
+                        responsável por receber informação de um armazenamento 
+                        persistente, onde quer que ele esteja. Isto abstrai a 
+                        visão do dado usada por uma aplicação do layout da 
+                        tabela, esquema XML ou arquivo em disco. <BR><BR>Uma 
+                        equipe poderia produzir três objetos DAO por um projeto 
+                        particular: um para ler o banco de dados, um para ler 
+                        dos arquivos XML recebidos da Web e um para fornecer 
+                        dados de teste para serem usados por desenvolvedores 
+                        trabalhando em outros aspectos do sistema. Se todos os 
+                        três objetos são descendentes de uma única classe 
+                        abstrata Java que define os vários métodos de acesso, os 
+                        objetos podem ser substituídos na aplicação final 
+                        dependendo das necessidades atuais. Os objetos podem 
+                        também ser usados em outros projetos baseados no mesmo 
+                        modelo. <BR><BR>Além de fornecer flexibilidade extra, um 
+                        DAO pode ser usado para aumentar a velocidade da camada 
+                        de apresentação (ou visão) em uma aplicação maior 
+                        pulando uma camada EJB. Ler diretamente do banco de 
+                        dados é sempre mais rápido do que ir através da camada 
+                        EJB, que tem que ler o banco de qualquer forma. Fazer 
+                        isto diretamente com a API JDBC (Java Database 
+                        Conectivity) é uma prática perigosa, já que ela liga o 
+                        modelo de dados à camada de apresentação de tal forma 
+                        que qualquer alteração na implementação do modelo de 
+                        dados requer reescrever grandes partes da camada de 
+                        apresentação, o que geralmente não é muito prático. Ao 
+                        se utilizar um DAO obtém-se o máximo de velocidade com 
+                        muito menos esforço de manutenção. <BR><BR>
+                        <H3>Data Transfer Object</H3>Como mencionamos 
+                        anteriormente, chamadas de métodos remotos podem 
+                        degradar severamente a performance de uma aplicação 
+                        J2EE. Existem duas formas de reduzir este overhead, 
+                        ambos trabalham com a minimização do número de conexões 
+                        com o servidor remoto. Já mostramos a session façade, 
+                        que trabalha tentando manter o maior número possível de 
+                        chamadas locais para o servidor EJB. <BR><BR>A outra 
+                        abordagem principal, o DTO, pode ser usado quando dados 
+                        apenas têm que ser transferidos para o cliente. DTOs 
+                        trabalham coletando conjuntos de informações 
+                        relacionadas em um único objeto. Este objeto pode ser 
+                        transferido do EJB para o cliente com uma única chamada 
+                        remota. Em vez de fazer chamadas separadas para receber 
+                        nome, endereço e formas de pagamento, o cliente pode 
+                        receber um objeto contendo tudo em uma única chamada. Já 
+                        que cada chamada na rede pode adicionar uma apreciável 
+                        fração de segundo ao tempo que ela gasta para executar 
+                        uma atividade, reduzir este overhead é geralmente o mais 
+                        efetivo melhoramento de performance possível para uma 
+                        aplicação J2EE. <BR><BR>Usando a aplicação anterior, 
+                        podemos adicionar o suporte a DTO adicionando um método 
+                        getCliente à definição do EJB, que retorna um objeto 
+                        ClienteDTO. O ClienteDTO é um JavaBean simples que 
+                        inclui propriedades para cada campo do EJB pai ao qual 
+                        estamos interessados. O cliente pode chamar getCliente() 
+                        e imediatamente receber um pacote contendo todas as 
+                        informações sobre o cliente. <BR><BR>Existem muitas 
+                        formas possíveis de implementar um DTO. Uma forma, como 
+                        já vimos, é usar um JavaBean para encapsular sua 
+                        informação. Esta abordagem permite a checagem de tipos 
+                        em tempo de compilação e tem a vantagem adicional de ser 
+                        essencialmente auto-documentável. <BR><BR>Uma outra 
+                        abordagem comum é usar uma implementação do Framework de 
+                        Coleções Java, geralmente um HashMap. Esta abordagem é 
+                        mais flexível do que escrever um objeto personalizado e 
+                        não requer a inserção de uma arquivo de classe de DTO no 
+                        cliente. Usar um HashMap, contudo, requer definir um 
+                        conjunto de chaves antes do tempo e garante que o 
+                        cliente e o EJB usam as mesmas chaves. HashMaps também 
+                        não permitem checagem de tipo em tempo de compilação, o 
+                        que pode resultar em erros estranhos e difíceis de 
+                        diagnosticar futuramente. <BR><BR>
+                        <H3>E Agora?</H3>Os quatro patterns cobertos aqui são 
+                        apenas o começo. Além de várias variações e 
+                        especializações desses patterns básicos, você encontrará 
+                        muitos outros patterns que podem ser usados para 
+                        resolver uma grande gama de problemas. A medida que 
+                        continuar a desenvolver suas aplicações J2EE, novos 
+                        patterns e variações se tornarão evidentes. Ficar de 
+                        olho nas novas descobertas é muito útil para projetos 
+                        futuros. <BR><BR><B>Para saber mais:</B><BR>
+                        <LI>TheServerSide - <A 
+                        href="http://www.theserverside.com/" 
+                        target=new>http://www.theserverside.com/</A> 
+<BR><BR><BR>
+                        <CENTER><A 
+                        href="javascript:history.go(-1);">Voltar</A></CENTER><BR><BR><BR></FONT></LI></TD></TR></TBODY></TABLE><!-- Listagem //--></TD></TR></TBODY></TABLE></TD><!-- // Segunda Coluna do Meio //--><!-- // Terceira Coluna do Meio //-->
+          <TD vAlign=top width=8><BR><BR clear=all><BR>
+            <DIV align=center> </DIV><BR></TD><!-- // Terceira Coluna do Meio //--><!--// Faixa Divisória //-->
+          <TD width=1 bgColor=#eeeeee><IMG height=1 
+            src="Design Patterns Fundamentais do J2EE_arquivos/single_pix.gif" 
+            width=1> </TD><!--// Faixa Divisória //--></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=2><!----Bottom Banner---->&nbsp; <!--//Bottom Banner----></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=left width="99%" bgColor=#ffffff colSpan=2><A 
+            onmouseover="status='Voltar para cima';return true;" 
+            onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/articles.asp?cod=145#PageTop"><IMG 
+            height=15 alt="Voltar para cima" hspace=5 
+            src="Design Patterns Fundamentais do J2EE_arquivos/up_darkgray.jpeg" 
+            width=14 vspace=5 border=0></A><BR></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#eeeeee colSpan=2>Copyright © 
+            1999,2003 Fundão Inc. - All rights reserved. </TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#ffffff>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=3><FONT 
+            color=white>&nbsp; 
+</FONT></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>

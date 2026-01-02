@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www2.fundao.pro.br/articles.asp?cod=92 -->
+<HTML><HEAD><TITLE>Fundão da Computação - Java Passo-a-Passo: O pacote java.util</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="" name=keywords>
+<META 
+content="Análise dos principais tópicos cobrados na Certificação Java da Sun" 
+name=description>
+<META http-equiv=content-style-type content=text/css><LINK 
+href="Java Passo-a-Passo O pacote java_util_arquivos/fundao.css" type=text/css 
+rel=STYLESHEET>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY bottomMargin=0 vLink=#666666 aLink=#990000 link=#990000 bgColor=#ffffff 
+leftMargin=0 topMargin=0 rightMargin=0 marginwidth="0" marginheight="0"><A 
+name=PageTop></A><!-- // Logo Superior --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=left width="50%" bgColor=#eeeeee><A 
+      href="http://www2.fundao.pro.br/default.asp"><IMG height=100 
+      src="Java Passo-a-Passo O pacote java_util_arquivos/fundao2.gif" width=430 
+      border=0></A></TD>
+    <TD align=right width="50%" 
+  bgColor=#eeeeee><!--// Outros Banners //--></TD></TR></TBODY></TABLE><!-- // Logo Superior ---><!-- // Top Menu Bar --->
+<TABLE cellSpacing=1 cellPadding=0 width="100%" bgColor=white border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/delphi"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Delphi</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/linguagens/java"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Java</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Linux</B></FONT> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/4ano/hipermidia"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Webdesign</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/3ano/arquitetura"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Hardware</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/2ano/assembly/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Assembly</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/games.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Games</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/dotnet/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>.NET</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/geral.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Geral</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/listas.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Listas</B></FONT></A> </TD></TR></TBODY></TABLE><!-- // Top Menu Bar --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR><!--// MENU LATERAL (ESQ) -->
+    <TD vAlign=top align=left width=143 bgColor=#eeeeee><IMG height=35 
+      alt="Tudo é tão poCivio quanto Siqueira" hspace=0 
+      src="Java Passo-a-Passo O pacote java_util_arquivos/mensagem.gif" 
+      width=143 align=center border=0 valign="center"> 
+      <TABLE cellSpacing=0 cellPadding=0 width=143 border=0><!----Áreas---->
+        <TBODY>
+        <TR>
+          <TD><IMG height=19 alt="" hspace=0 
+            src="Java Passo-a-Passo O pacote java_util_arquivos/artigos.gif" 
+            width=143 border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/default.asp">- 
+            Home</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Algoritmos comentados e implementados';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/algoritmos">- 
+            Algoritmos</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 2º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/2ano">- Segundo 
+            Ano</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 3º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/3ano">- Terceiro Ano 
+            </A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 4º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/4ano"><NOBR>- Quarto Ano 
+            </NOBR></A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Todas as áreas abrangidas pelo Curso de Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/todas.asp">- Todas as 
+            Matérias</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Artigos, códigos e downloads sobre várias ferramentas de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/ferramentas">- 
+            Ferramentas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Amplo material sobre as mais variadas linguagens de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/linguagens/">- 
+            Linguagens</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice de todos os códigos disponíveis no site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/codigos.asp">- Códigos</A> 
+            <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Procure sobre algo no Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/busca.asp">- Busca</A> <IMG 
+            hspace=0 
+            src="Java Passo-a-Passo O pacote java_util_arquivos/imgNavNew.gif" 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Listagem de sites de interesse para todos os programadores.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/bookmark.asp">- 
+            Bookmark</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Dicas de segurança.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/seguranca/default.asp">- 
+            Segurança</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja desafios interessantes';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/desafios.asp">- 
+            Desafios</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice geral do Site do Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/indice.asp">- 
+            Índice</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fórum do Fundão sobre programação';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www.forumnow.com/basic/topicos.asp?grupodiscussao=13872" 
+            target=new>- Fórum<BR>&nbsp;&nbsp;</A><A id=black 
+            onmouseover="status='Notícias para o pessoal que já saiu da universidade.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/rodo.asp">- Rodô</A><BR></TD></TR><!--//Áreas----><!----About---->
+        <TR>
+          <TD><IMG height=19 alt="" 
+            src="Java Passo-a-Passo O pacote java_util_arquivos/sobre.gif" 
+            width=143 border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Conheça quem faz o Fundão.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/colaboradores.asp">- 
+            Colaboradores</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entenda o que é e o qual a origem do Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/whatis.asp">- O que é o 
+            Fundão?</A><BR></TD></TR><!--//About----><!----Contact---->
+        <TR>
+          <TD bgColor=#cccccc height=19>
+            <DIV align=center><FONT color=#333333><IMG height=19 alt="" 
+            src="Java Passo-a-Passo O pacote java_util_arquivos/contato.gif" 
+            width=143 border=0></FONT></DIV></TD></TR>
+        <TR>
+          <TD>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entre em contato enviando críticas e sugestões para o site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/contato.asp">- 
+            Contato</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja os resultados das últimas pesquisas realizadas.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/pesquisa.asp">- 
+            Pesquisas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Assine nossa newsletter e receba no seu email as novidades.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/newsletter.asp">- 
+            Newsletter</A><BR></TD></TR><!--//Contact----></TBODY></TABLE><!--//Links Legais-->
+      <DIV align=center><BR>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#cccccc>
+            <TABLE cellSpacing=1 cellPadding=2 border=0>
+              <TBODY>
+              <TR>
+                <TH bgColor=#cccccc><FONT color=#333333>Links 
+              Legais</FONT></TH></TR>
+              <TR>
+                <TD bgColor=#eeeeee><IMG hspace=0 
+                  src="Java Passo-a-Passo O pacote java_util_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='TV ao vivo na Internet';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.alltv.com.br/" 
+                  target=_blank>AllTV</A><BR><IMG hspace=0 
+                  src="Java Passo-a-Passo O pacote java_util_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='Site sobre Cinema e HQs';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.universohq.com/" target=_blank>Universo 
+                  HQ</A><BR><IMG hspace=0 
+                  src="Java Passo-a-Passo O pacote java_util_arquivos/pfeil_black(1).gif" 
+                  border=0><A onmouseover="status='Cinema';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.e-pipoca.com.br/" 
+                  target=_blank>e-pipoca</A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><BR 
+      clear=all><BR><!--//Links Legais--><BR><BR><BR><BR><BR></TD><!--// MENU LATERAL (ESQ) --><!--// REGIAO CENTRAL ------>
+    <TD vAlign=top width="100%" colSpan=2>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" align=center border=0 
+      valign="top">
+        <TBODY>
+        <TR><!-- // Primeira Coluna do Meio //-->
+          <TD vAlign=top>&nbsp; <BR></TD><!-- // Primeira Coluna do Meio //--><!-- // Segunda Coluna do Meio //-->
+          <TD vAlign=top align=middle>
+            <TABLE width="97%" border=0 valign="top">
+              <TBODY>
+              <TR>
+                <TD vAlign=top height=400><BR><A 
+                  href="http://www2.fundao.pro.br/resources/ferramentas/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>Ferramentas</A> » <A 
+                  href="http://www2.fundao.pro.br/resources/ferramentas/j2ee/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>J2EE</A></B></FONT> 
+                  </B></FONT><FONT face=Tahoma color=#990000 size=4><B>» Java 
+                  Passo-a-Passo: O pacote java.util</B></FONT></FONT> 
+                  <TABLE width="95%" align=left border=0>
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=#990000 
+height=2></TD></TR></TBODY></TABLE><BR><BR>
+                  <TABLE width="100%" align=right border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>Análise dos principais tópicos cobrados na 
+                        Certificação Java da Sun <BR><BR>
+                        <DIV align=right>Novembro/2002<FONT 
+                        color=white>&nbsp;&nbsp;&nbsp;</FONT></DIV></TD></TR></TBODY></TABLE><BR><BR><BR><BR><BR><!-- Listagem //-->
+                  <TABLE width="95%" align=center border=0>
+                    <TBODY>
+                    <TR bgColor=#ffffff height=30>
+                      <TD width="100%"><FONT size=2>Vamos analisar as 
+                        principais classes do pacote java.util.<BR><BR>
+                        <H3>O pacote java.util</H3>Aqui veremos brevemente as 
+                        classes principais deste pacote. É importante para o 
+                        programador conhecê-las para poder fazer uma escolha 
+                        apropriada da classe/interface que apresente um 
+                        comportamento que se adeque às suas necessidades. A 
+                        partir das novas certificações do Java 2 o conhecimento 
+                        de classes de coleções é constantemente avaliado. As 
+                        questões são bem básicas, e requerem o conhecimento de 
+                        onde e como você pode usá-las, em vez de um conhecimento 
+                        detalhado dos campos e métodos. <BR><BR><B>As coleções 
+                        antigas</B> <BR><BR>A API do Java 2 inclui novas 
+                        interfaces e classes para aumentar a quantidade de 
+                        coleções disponíveis. Versões anteriores de Java 
+                        incluiam: 
+                        <UL>
+                          <LI>vector 
+                          <LI>hashtable 
+                          <LI>array 
+                          <LI>BitSet </LI></UL>Dessas, apenas array era cobrada na 
+                        certificação 1.1. Uma das notáveis ausências do Java 1.1 
+                        era o suporte para ordenaçãi, uma necessidade muito 
+                        comum em qualquer situação de programação. <BR><BR><B>As 
+                        novas coleções</B> <BR><BR>Na raíz da API Collection 
+                        está a interface Collection. Ela nos fornece uma série 
+                        de métodos comuns que todas as classes de coleção devem 
+                        ter. Você provavelmente nunca terá que criar sua própria 
+                        classe que implementa Collection já que o Java fornece 
+                        uma série de sub-interfaces e classes que usam a 
+                        interface Collection. <BR><BR>A API do Java 2 inclui as 
+                        seguintes novas interfaces de coleções: 
+                        <UL>
+                          <LI>Sets 
+                          <LI>Maps </LI></UL>Classes que implementam a interface 
+                        Collection armazenam objetos como elementos que não são 
+                        tipos primitivos. Esta abordagem tem uma desvantagem, 
+                        pois criar objetos gera um overhead de performance e os 
+                        elementos os elementos devem ser reconvertidos de Object 
+                        para o tipo apropriado antes de serem usados. Isto 
+                        também significa que as coleções não checam se os 
+                        elementos são todos do mesmo tipo, já que um objeto pode 
+                        ser quase qualquer coisa. <BR><BR><B>Set</B> <BR><BR>Um 
+                        Set (Conjunto) é uma interface de coleção que não pode 
+                        conter elementos duplicados. Dessa forma, se assemelha 
+                        com o conceito de um conjunto de registros retornado de 
+                        uma tabela de um banco de dados relacional. A parte mais 
+                        interessante da interface Set é o método de adição: 
+                        <BLOCKQUOTE><PRE><FONT color=darkgreen size=2>   add(Object o);
+</FONT></PRE></BLOCKQUOTE>Qualquer objeto passado para o 
+                        método add deve implementar o método equals de forma que 
+                        o valor possa ser comparado com objetos existentes na 
+                        classe. Se o conjunto já contém este objeto a chamada ao 
+                        add deixa o conjunto inalterado e retorna falso. A idéia 
+                        de retornar falso quando se tenta adicionar um elemento 
+                        parece mais com a abordagem usada em C/C++ do que Java. 
+                        Muitos métodos similares de Java lançariam uma Exception 
+                        neste tipo de situação. <BR><BR><B>List</B> <BR><BR>Um 
+                        List (lista) é uma interface de coleção ordenada que 
+                        pode conter duplicatas. <BR><BR>Alguns métodos 
+                        importantes são: 
+                        <UL>
+                          <LI>add 
+                          <LI>remove 
+                          <LI>clear </LI></UL>A documentação do JDK trás um 
+                        exemplo do uso de List para gerenciar um controle de 
+                        lista de uma GUI real contendo uma lista de nomes de 
+                        Planetas. <BR><BR><B>Map</B> <BR><BR>Map é uma 
+                        interface, classes que a implementam não podem conter 
+                        chaves duplicadas, e é similar a uma hashtable. 
+                        <BR><BR><B>Por que usar Collections em vez de 
+                        arrays?</B> <BR><BR>A grande vantagem de coleções sobre 
+                        arrays é que as coleções podem crescer em tamanho, você 
+                        não tem que atribuir o tamanho no momento da criação. A 
+                        desvantagem de coleções é que elas armazenam apenas 
+                        objetos e não tipos primitivos e isto trás um inevitável 
+                        overhead de performance. Arrays não suportam ordenação 
+                        diretamente, mas isto pode ser superado usando-se 
+                        métodos estáticos de Collections. Aqui está um exemplo: 
+                        <BLOCKQUOTE><PRE><FONT color=darkgreen size=2>import java.util.*;
+public class Sort{
+    public static void main(String argv[]){
+    Sort s = new Sort();
+    }
+Sort(){
+    String s[] = new String[4];
+    s[0]="z";
+    s[1]="b";
+    s[2]="c";
+    s[3]="a";
+    Arrays.sort(s);
+    for(int i=0;i&lt; s.length;i++)
+    System.out.println(s[i]);
+    }
+}
+</FONT></PRE></BLOCKQUOTE>As coleções Set e Map garantem 
+                        a unicidade, List não garante a unicidade de seus itens 
+                        mas os ordena. <BR><BR><B>Utilizando Vectors</B> 
+                        <BR><BR>O exemplo a seguir ilustra como você pode 
+                        adicionar objetos de diferentes classes a um Vector. 
+                        Isto contrasta com arrays onde cada elemento deve ser do 
+                        mesmo tipo. O código então navega através de cada objeto 
+                        imprimindo na saída padrão. Ele acessa implicitamente o 
+                        método toString de cada objeto. 
+                        <BLOCKQUOTE><PRE><FONT color=darkgreen size=2>import java.awt.*;
+import java.util.*;
+public class Vec{
+public static void main(String argv[]){
+    Vec v = new Vec();
+    v.amethod();
+    }//Fim do main
+
+public void amethod(){
+        Vector mv = new Vector();
+        //Note como um vetor pode armazenar objetos
+        //de diferentes tipos
+        mv.addElement("Hello");
+        mv.addElement(Color.red);
+        mv.addElement(new Integer(99));
+        //Isto causaria um erro
+        //Já que um vetor não armazenará primitivos
+        //mv.addElement(99)
+        //Caminha por todos os elementos do vetor
+        for(int i=0; i&lt; mv.size(); i++){
+            System.out.println(mv.elementAt(i));
+            }
+   }//Fim do método
+}
+</FONT></PRE></BLOCKQUOTE>Antes do Java 2 a classe 
+                        Vector era a principal forma de criar uma estrutura de 
+                        dados redimensionável. Elementos podem ser removidos da 
+                        classe Vector com o método remove. <BR><BR><B>Usando 
+                        Hashtables</B> <BR><BR>Hashtables são um pouco parecidos 
+                        com o conceito do Visual Basic de uma Collection usada 
+                        com uma chave. Ele age como um Vector, exceto que em vez 
+                        de referenciar os elementos pelo número, você os 
+                        referencia por uma chave. A parte hash do nome refere-se 
+                        ao termo matemático que trata da criação dos índices. Um 
+                        hashtable pode oferecer buscas mais rápidas do que um 
+                        Vector. <BR><BR><B>BitSet</B> <BR><BR>Um BitSet como o 
+                        nome já diz, armazena uma sequência de Bits. Não se 
+                        confunda com a parte "set" do nome. Ele não é um 
+                        conjunto no sentido matemático ou de banco de dados, nem 
+                        está relacionado com os Sets disponíveis no Java 2. É 
+                        mais apropriado pensar nele como um vetor de bits. Um 
+                        BitSet pode ser útil para uma armazenagem eficiente de 
+                        bits onde os bits são utilizados para representar 
+                        valores verdadeiro/falso. A alternativa de se usar algum 
+                        tipo de coleção contendo valores Boolean pode ser menos 
+                        eficiente. <BR><BR>De acordo com Bruce Eckel em 
+                        "Thinking in Java" <BR><BR><I>"É eficiente apenas do 
+                        ponto de vista de tamanho; se você está procurando por 
+                        eficiência de acesso, é levemente mais lento do que usar 
+                        um array de algum tipo nativo."</I> <BR><BR>O BitSet é 
+                        uma classe que deve ser mais útil para propósitos de 
+                        criptografia ou processamento de imagens. 
+                        <BR><BR><B>Dica: </B>Para estudar para a Certificação 
+                        Java um bom livro é o <I>The Complete Java 2 
+                        Certification Study Guide</I> - Simon Roberts. 
+                        <BR><BR><BR>
+                        <CENTER><A 
+                        href="javascript:history.go(-1);">Voltar</A></CENTER><BR><BR><BR></FONT></TD></TR></TBODY></TABLE><!-- Listagem //--></TD></TR></TBODY></TABLE></TD><!-- // Segunda Coluna do Meio //--><!-- // Terceira Coluna do Meio //-->
+          <TD vAlign=top width=8><BR><BR clear=all><BR>
+            <DIV align=center> </DIV><BR></TD><!-- // Terceira Coluna do Meio //--><!--// Faixa Divisória //-->
+          <TD width=1 bgColor=#eeeeee><IMG height=1 
+            src="Java Passo-a-Passo O pacote java_util_arquivos/single_pix.gif" 
+            width=1> </TD><!--// Faixa Divisória //--></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=2><!----Bottom Banner---->&nbsp; <!--//Bottom Banner----></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=left width="99%" bgColor=#ffffff colSpan=2><A 
+            onmouseover="status='Voltar para cima';return true;" 
+            onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/articles.asp?cod=92#PageTop"><IMG 
+            height=15 alt="Voltar para cima" hspace=5 
+            src="Java Passo-a-Passo O pacote java_util_arquivos/up_darkgray.jpeg" 
+            width=14 vspace=5 border=0></A><BR></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#eeeeee colSpan=2>Copyright © 
+            1999,2003 Fundão Inc. - All rights reserved. </TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#ffffff>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=3><FONT 
+            color=white>&nbsp; 
+</FONT></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>
