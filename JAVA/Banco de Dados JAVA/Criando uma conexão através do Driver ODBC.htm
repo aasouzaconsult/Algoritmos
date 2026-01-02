@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0053)http://www.javafree.com.br/forum/viewtopic.php?t=1385 -->
+<HTML dir=ltr><HEAD><TITLE>JavaFree.com.br :: Exibir tópico - Criando uma conexão através do Driver ODBC</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Style-Type content=text/css><LINK 
+title="JavaFree.com.br - Índice do Fórum" href="./index.php" rel=top><LINK 
+title=Pesquisar href="./search.php" rel=search><LINK title=FAQ href="./faq.php" 
+rel=help><LINK title=Membros href="./memberlist.php" rel=author><LINK 
+title="Exibir mensagem anterior" href="viewtopic.php?t=1385&amp;view=previous" 
+rel=prev><LINK title="Exibir próxima mensagem" 
+href="viewtopic.php?t=1385&amp;view=next" rel=next><LINK 
+title="[Tutoriais] - Banco de Dados" href="viewforum.php?f=15" rel=up><LINK 
+title="Java Básico" href="viewforum.php?f=1" rel="chapter forum"><LINK 
+title="Java Avançado" href="viewforum.php?f=21" rel="chapter forum"><LINK 
+title="J2EE / EJB" href="viewforum.php?f=22" rel="chapter forum"><LINK 
+title="JSP / Servlets" href="viewforum.php?f=3" rel="chapter forum"><LINK 
+title="Banco de Dados - JDBC / SQL" href="viewforum.php?f=6" 
+rel="chapter forum"><LINK title="GUI - (Applets, Swing, SWT, etc)" 
+href="viewforum.php?f=8" rel="chapter forum"><LINK title=J2ME 
+href="viewforum.php?f=10" rel="chapter forum"><LINK title="Ferramentas e APIs" 
+href="viewforum.php?f=23" rel="chapter forum"><LINK title=Livros 
+href="viewforum.php?f=12" rel="chapter forum"><LINK 
+title="Arquitetura, Frameworks e UML" href="viewforum.php?f=25" 
+rel="chapter forum"><LINK title=OpenNuke href="viewforum.php?f=9" 
+rel="chapter forum"><LINK title="Grupo de estudo - Certificações Sun" 
+href="viewforum.php?f=5" rel="chapter forum"><LINK title=Off-Topic. 
+href="viewforum.php?f=4" rel="chapter forum"><LINK title=Desafios 
+href="viewforum.php?f=24" rel="chapter forum"><LINK 
+title="Londrina JFJUG - Público" href="viewforum.php?f=26" 
+rel="chapter forum"><LINK title="Floripa JFJUG - Público" 
+href="viewforum.php?f=30" rel="chapter forum"><LINK title=Moderadores 
+href="viewforum.php?f=13" rel="chapter forum"><LINK title=Comunicados 
+href="viewforum.php?f=14" rel="chapter forum"><LINK 
+title="[Tutoriais] - Banco de Dados" href="viewforum.php?f=15" 
+rel="chapter forum"><LINK title="[Tutoriais] - Boas Práticas de Programação" 
+href="viewforum.php?f=16" rel="chapter forum"><LINK 
+title="[Tutoriais] - Java Diversos" href="viewforum.php?f=17" 
+rel="chapter forum"><LINK title="[Tutoriais] - Instalações e configurações" 
+href="viewforum.php?f=18" rel="chapter forum"><LINK 
+title="[Tutoriais] - Ambiente WEB" href="viewforum.php?f=19" 
+rel="chapter forum"><LINK title="[Tutoriais] - Dicas Sobre Java" 
+href="viewforum.php?f=11" rel="chapter forum"><LINK title="[Tutoriais] - J2ME" 
+href="viewforum.php?f=20" rel="chapter forum"><LINK 
+title="[Tutoriais] - Eclipse" href="viewforum.php?f=29" 
+rel="chapter forum"><LINK 
+href="Criando uma conexão através do Driver ODBC_arquivos/subVereor.css" 
+type=text/css rel=stylesheet -->
+<SCRIPT language=Javascript type=text/javascript>
+<!--
+	if ( 0 )
+	{
+		window.open('privmsg.php?mode=newpm', '_phpbbprivmsg', 'HEIGHT=225,resizable=yes,WIDTH=400');;
+	}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY bgColor=#ebecec leftMargin=0 topMargin=0 marginheight="0" 
+marginwidth="0"><A name=top></A>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_header.gif" 
+    height=101><A href="http://www.javafree.com.br/forum/index.php"><IMG 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_logo.gif" 
+      border=0></A></TD>
+    <TD vAlign=center align=middle width="100%" 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_header.gif">
+      <TABLE height=10 cellSpacing=1 cellPadding=0 width=10 bgColor=#b6b6b6 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle bgColor=#f9f9f9><STRONG 
+            class=genmed><A 
+            href="http://www.javafree.com.br/forum/redirect.php?banner_id=6" 
+            target=_blank><IMG title="Se é Java, é FREE!!" 
+            alt="Se é Java, é FREE!!" 
+            src="Criando uma conexão através do Driver ODBC_arquivos/banner.gif" 
+            border=0></A></STRONG></TD></TR></TBODY></TABLE></TD></TR>
+  <TR align=middle>
+    <TD 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_nav.gif" 
+    colSpan=2 height=31><IMG height=31 hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/home/">Voltar ao JavaFree</A><IMG 
+      height=31 hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/faq.php">FAQ</A><IMG height=31 
+      hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/search.php">Busca</A><IMG height=31 
+      hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/memberlist.php">Membros</A><IMG 
+      height=31 hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/profile.php?mode=register">Registre-se</A><IMG 
+      height=31 hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/profile.php?mode=editprofile">Perfil</A><IMG 
+      height=31 hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/privmsg.php?folder=inbox">PM's</A><IMG 
+      height=31 hspace=10 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_bullet.gif" 
+      width=19 align=absMiddle><A class=nav 
+      href="http://www.javafree.com.br/forum/login.php?logout=true&amp;sid=40959e63eb08c955a0dbd0a7decd5dbd">Login/Out</A></TD></TR>
+  <TR>
+    <TD 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_fadetop.gif" 
+    colSpan=2 height=12></TD></TR>
+  <TR align=middle bgColor=#ffffff>
+    <TD class=mainbody colSpan=2>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=left colSpan=2><A class=maintitle 
+            href="http://www.javafree.com.br/forum/viewtopic.php?t=1385&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=">Criando 
+            uma conexão através do Driver ODBC</A><BR><SPAN 
+            class=gensmall><B></B><BR>&nbsp; </SPAN></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom noWrap align=left><SPAN class=nav><A 
+            href="http://www.javafree.com.br/forum/posting.php?mode=newtopic&amp;f=15"><IMG 
+            alt="Novo Tópico" 
+            src="Criando uma conexão através do Driver ODBC_arquivos/post.gif" 
+            align=middle border=0></A>&nbsp;&nbsp;&nbsp;<A 
+            href="http://www.javafree.com.br/forum/posting.php?mode=reply&amp;t=1385"><IMG 
+            alt="Responder Mensagem" 
+            src="Criando uma conexão através do Driver ODBC_arquivos/reply.gif" 
+            align=middle border=0></A></SPAN></TD>
+          <TD vAlign=center align=left width="100%"><SPAN 
+            class=nav>&nbsp;&nbsp;&nbsp;<A class=nav 
+            href="http://www.javafree.com.br/forum/index.php">JavaFree.com.br - 
+            Índice do Fórum</A> -&gt; <A class=nav 
+            href="http://www.javafree.com.br/forum/viewforum.php?f=15">[Tutoriais] 
+            - Banco de Dados</A></SPAN></TD>
+          <TD vAlign=bottom align=right><SPAN class=mainmenu><A class=mainmenu 
+            title="Exibir Página para Impressão" 
+            href="http://www.javafree.com.br/forum/printview.php?t=1385&amp;start=0">Imprimir&nbsp;<IMG 
+            src="Criando uma conexão através do Driver ODBC_arquivos/printer.gif" 
+            border=0></A></SPAN></TD></TR></TBODY></TABLE>
+      <TABLE class=forumline cellSpacing=1 cellPadding=3 width="100%" 
+        border=0><TBODY>
+        <TR align=right>
+          <TD class=cat colSpan=2 height=28><SPAN class=cat><A class=cat 
+            href="http://www.javafree.com.br/forum/viewtopic.php?t=1385&amp;view=previous">Exibir 
+            mensagem anterior</A> :: <A class=cat 
+            href="http://www.javafree.com.br/forum/viewtopic.php?t=1385&amp;view=next">Exibir 
+            próxima mensagem</A> &nbsp;</SPAN></TD></TR>
+        <TR>
+          <TH class=thLeft noWrap width=150 height=26>Autor</TH>
+          <TH class=thRight noWrap>Mensagem</TH></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=6572></A><B>Tutoriais Admin</B></SPAN><BR><SPAN 
+            class=postdetails>java.awt.event<BR><IMG title=java.awt.event 
+            alt=java.awt.event 
+            src="Criando uma conexão através do Driver ODBC_arquivos/4stars.gif" 
+            border=0><BR><BR><BR>Registrado em: Sexta-Feira, 17 de Outubro de 
+            2003<BR>Mensagens: 37<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://www.javafree.com.br/forum/viewtopic.php?p=6572#6572"><IMG 
+                  title=Mensagem height=9 alt=Mensagem 
+                  src="Criando uma conexão através do Driver ODBC_arquivos/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Enviada: Sex Out 
+                  17, 2003 10:54 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; 
+                  &nbsp;Assunto: Criando uma conexão através do Driver 
+                  ODBC</SPAN></TD>
+                <TD vAlign=top noWrap align=right><A 
+                  href="http://www.javafree.com.br/forum/posting.php?mode=quote&amp;p=6572"><IMG 
+                  title="Responder com Citação" alt="Responder com Citação" 
+                  src="Criando uma conexão através do Driver ODBC_arquivos/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>Código:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=code>import java.sql.*; <BR><BR>&nbsp; 
+                        &nbsp;public class simpleConnection { <BR>&nbsp; &nbsp; 
+                        &nbsp; &nbsp;public static void main(String args[]) { 
+                        <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try { <BR>&nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//Registrando o 
+                        driver: <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp;Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance(); 
+                        <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp;//Estabelecendo a conexão através do ODBC criado 
+                        no Painel de Controle: <BR>&nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;Connection con = 
+                        DriverManager.getConnection("jdbc:odbc:Inventory","",""); 
+                        <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp;//Criando um objeto Statement para enviar 
+                        requisições SQL para o Banco de Dados <BR>&nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Statement stmt = 
+                        con.createStatement(); <BR>&nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;//Executando SQL: <BR>&nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;stmt.execute("SELECT * 
+                        FROM objects"); <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp;//Adquirindo através de um objeto ResulSet, 
+                        os registros retornados pela SQL: <BR>&nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ResultSet results = 
+                        stmt.getResultSet(); <BR>&nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;//Fechando a conexão: <BR>&nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;con.close(); 
+                        <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } catch(Exception 
+                        e) { <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp;System.out.println(e); <BR>&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; } <BR>&nbsp; &nbsp; &nbsp; &nbsp;} 
+                        <BR>&nbsp; &nbsp; }</TD></TR></TBODY></TABLE><SPAN 
+                  class=postbody><BR><BR>Se você não sabe como criar uma conexão 
+                  ODBC, veja este tutorial <BR><A 
+                  href="http://www.javafree.com.br/home/modules.php?name=News&amp;file=article&amp;sid=9" 
+                  target=_blank>http://www.javafree.com.br/home/modules.php?name=News&amp;file=article&amp;sid=9</A> 
+                  <BR><BR><BR><BR><BR><BR>Até + <BR><BR>Dalton Milkvicz de 
+                  Camargo <BR><A 
+                  href="mailto:dalton@javafree.com.br">dalton@javafree.com.br</A></SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://www.javafree.com.br/forum/viewtopic.php?t=1385#top">Voltar 
+            ao Topo</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://www.javafree.com.br/forum/profile.php?mode=viewprofile&amp;u=2358"><IMG 
+                  title="Ver o perfil de Usuários" 
+                  alt="Ver o perfil de Usuários" 
+                  src="Criando uma conexão através do Driver ODBC_arquivos/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://www.javafree.com.br/forum/privmsg.php?mode=post&amp;u=2358"><IMG 
+                  title="Enviar Mensagem Particular" 
+                  alt="Enviar Mensagem Particular" 
+                  src="Criando uma conexão através do Driver ODBC_arquivos/icon_pm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="Criando uma conexão através do Driver ODBC_arquivos/spacer.gif" 
+            width=1></TD></TR>
+        <TR align=middle>
+          <TD class=cat colSpan=2 height=28>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <FORM action=viewtopic.php?t=1385&amp;start=0 method=post>
+                <TD align=middle><SPAN class=cat>Mostrar os tópicos 
+                  anteriores: <SELECT name=postdays><OPTION value=0 
+                    selected>Todas as mensagens</OPTION><OPTION value=1>1 
+                    Dia</OPTION><OPTION value=7>7 Dias</OPTION><OPTION 
+                    value=14>2 Semanas</OPTION><OPTION value=30>1 
+                    Mês</OPTION><OPTION value=90>3 Meses</OPTION><OPTION 
+                    value=180>6 Meses</OPTION><OPTION value=364>1 
+                  Ano</OPTION></SELECT>&nbsp;<SELECT name=postorder><OPTION 
+                    value=asc selected>Antigas primeiro</OPTION><OPTION 
+                    value=desc>Recentes primeiro</OPTION></SELECT>&nbsp;<INPUT class=liteoption type=submit value=Ir name=submit></SPAN></TD></FORM></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center noWrap align=left><SPAN class=nav><A 
+            href="http://www.javafree.com.br/forum/posting.php?mode=newtopic&amp;f=15"><IMG 
+            alt="Novo Tópico" 
+            src="Criando uma conexão através do Driver ODBC_arquivos/post.gif" 
+            align=middle border=0></A>&nbsp;&nbsp;&nbsp;<A 
+            href="http://www.javafree.com.br/forum/posting.php?mode=reply&amp;t=1385"><IMG 
+            alt="Responder Mensagem" 
+            src="Criando uma conexão através do Driver ODBC_arquivos/reply.gif" 
+            align=middle border=0></A></SPAN></TD>
+          <TD vAlign=center align=left width="100%"><SPAN 
+            class=nav>&nbsp;&nbsp;&nbsp;<A class=nav 
+            href="http://www.javafree.com.br/forum/index.php">JavaFree.com.br - 
+            Índice do Fórum</A> -&gt; <A class=nav 
+            href="http://www.javafree.com.br/forum/viewforum.php?f=15">[Tutoriais] 
+            - Banco de Dados</A></SPAN></TD>
+          <TD vAlign=bottom align=right><SPAN class=mainmenu><A class=mainmenu 
+            title="Exibir Página para Impressão" 
+            href="http://www.javafree.com.br/forum/printview.php?t=1385&amp;start=0">Imprimir&nbsp;<IMG 
+            src="Criando uma conexão através do Driver ODBC_arquivos/printer.gif" 
+            border=0></A></SPAN></TD>
+          <TD vAlign=top noWrap align=right><SPAN class=gensmall>Todos os 
+            horários são GMT - 3 Hours</SPAN><BR><SPAN class=nav></SPAN></TD></TR>
+        <TR>
+          <TD align=left colSpan=3><SPAN class=nav>Página <B>1</B> de 
+            <B>1</B></SPAN></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top noWrap align=left width="40%"><SPAN class=gensmall><A 
+            href="http://www.javafree.com.br/forum/viewtopic.php?t=1385&amp;watch=topic&amp;start=0&amp;sid=40959e63eb08c955a0dbd0a7decd5dbd">Observar 
+            respostas a este Tópico</A></SPAN><BR>&nbsp;<BR></TD>
+          <TD vAlign=top noWrap align=right>
+            <FORM name=jumpbox 
+            onsubmit="if(document.jumpbox.f.value == -1){return false;}" 
+            action=viewforum.php method=get>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap><SPAN class=gensmall>Ir para:&nbsp;<SELECT 
+                  onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }" 
+                  name=f><OPTION value=-1>Selecione um Fórum</OPTION><OPTION 
+                    value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Java</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=1>Java 
+                    Básico</OPTION><OPTION value=21>Java 
+                    Avançado</OPTION><OPTION value=22>J2EE / EJB</OPTION><OPTION 
+                    value=3>JSP / Servlets</OPTION><OPTION value=6>Banco de 
+                    Dados - JDBC / SQL</OPTION><OPTION value=8>GUI - (Applets, 
+                    Swing, SWT, etc)</OPTION><OPTION 
+                    value=10>J2ME</OPTION><OPTION value=23>Ferramentas e 
+                    APIs</OPTION><OPTION value=12>Livros</OPTION><OPTION 
+                    value=25>Arquitetura, Frameworks e UML</OPTION><OPTION 
+                    value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Diversos</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION 
+                    value=9>OpenNuke</OPTION><OPTION value=5>Grupo de estudo - 
+                    Certificações Sun</OPTION><OPTION 
+                    value=4>Off-Topic.</OPTION><OPTION 
+                    value=24>Desafios</OPTION><OPTION value=26>Londrina JFJUG - 
+                    Público</OPTION><OPTION value=30>Floripa JFJUG - 
+                    Público</OPTION><OPTION value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Administrativo</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION 
+                    value=13>Moderadores</OPTION><OPTION 
+                    value=14>Comunicados</OPTION><OPTION 
+                    value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Tutoriais</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=15 
+                    selected>[Tutoriais] - Banco de Dados</OPTION><OPTION 
+                    value=16>[Tutoriais] - Boas Práticas de 
+                    Programação</OPTION><OPTION value=17>[Tutoriais] - Java 
+                    Diversos</OPTION><OPTION value=18>[Tutoriais] - Instalações 
+                    e configurações</OPTION><OPTION value=19>[Tutoriais] - 
+                    Ambiente WEB</OPTION><OPTION value=11>[Tutoriais] - Dicas 
+                    Sobre Java</OPTION><OPTION value=20>[Tutoriais] - 
+                    J2ME</OPTION><OPTION value=29>[Tutoriais] - 
+                  Eclipse</OPTION></SELECT>&nbsp;<INPUT class=liteoption type=submit value=Ir></SPAN></TD></TR></TBODY></TABLE></FORM><SPAN 
+            class=gensmall>Enviar Mensagens Novas: <B>Proibído</B>.<BR>Responder 
+            Tópicos: <B>Permitido</B>.<BR>Editar Mensagens: 
+            <B>Permitido</B>.<BR>Excluir Mensagens: <B>Permitido</B>.<BR>Votar 
+            em Enquetes: 
+      <B>Permitido</B>.<BR></SPAN></TD></TR></TBODY></TABLE><BR><BR><BR>
+      <CENTER><A href="http://t.extreme-dm.com/?login=javafree" 
+      target=_blank><IMG height=10 alt="" 
+      src="Criando uma conexão através do Driver ODBC_arquivos/i.gif" width=10 
+      border=0></A>
+      <SCRIPT language=javascript1.2><!--
+EXs=screen;EXw=EXs.width;navigator.appName!="Netscape"?
+EXb=EXs.colorDepth:EXb=EXs.pixelDepth;//-->
+</SCRIPT>
+
+      <SCRIPT language=javascript><!--
+EXd=document;EXw?"":EXw="na";EXb?"":EXb="na";
+EXd.write("<img src=\"http://t0.extreme-dm.com",
+"/0.gif?tag=javafree&j=y&srw="+EXw+"&srb="+EXb+"&",
+"l="+escape(EXd.referrer)+"\" height=1 width=1>");//-->
+</SCRIPT>
+      <NOSCRIPT><IMG height=1 alt="" 
+      src="Criando uma conexão através do Driver ODBC_arquivos/0.gif" 
+      width=1></NOSCRIPT> </CENTER><!--
+	I'd appreciate it if this tagline is left on.  If it's not, then
+	I will not support your forum.
+	Nick
+--></TD></TR>
+  <TR>
+    <TD 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_fadebot.gif" 
+    colSpan=2 height=16>&nbsp;</TD></TR>
+  <TR>
+    <TD 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_c_bg.gif" 
+    height=30><IMG height=30 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_ad.gif" 
+      width=158 border=0></TD>
+    <TD vAlign=bottom align=right 
+    background="Criando uma conexão através do Driver ODBC_arquivos/_c_bg.gif"><A 
+      href="http://www.phpbb.com/" target=_blank><IMG height=21 
+      src="Criando uma conexão através do Driver ODBC_arquivos/_copyright.gif" 
+      width=240 border=0></A></TD></TR></TBODY></TABLE></BODY></HTML>

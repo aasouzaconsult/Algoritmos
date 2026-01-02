@@ -1,0 +1,220 @@
+@import url( formie.css );
+A:link {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.cat {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.cat:hover {
+	COLOR: #f1f1f1; TEXT-DECORATION: none
+}
+A.copyright {
+	COLOR: #444444; TEXT-DECORATION: none
+}
+A.copyright:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.forumlink {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.forumlink:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.gen {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.genmed {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.gensmall {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.gen:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.genmed:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.gensmall:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.mainmenu {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.mainmenu:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.nav {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.nav:hover {
+	TEXT-DECORATION: none
+}
+A.postlink:link {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.postlink:visited {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.postlink:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+A.topictitle:link {
+	COLOR: #445395; TEXT-DECORATION: none
+}
+A.topictitle:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.topictitle:hover {
+	COLOR: #e35000; TEXT-DECORATION: none
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #dee3e7
+}
+FONT {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+HR {
+	BORDER-RIGHT: #d1d7dc 0px solid; BORDER-TOP: #d1d7dc 1px solid; BORDER-LEFT: #d1d7dc 0px solid; BORDER-BOTTOM: #d1d7dc 0px solid; HEIGHT: 0px
+}
+INPUT {
+	TEXT-INDENT: 2px
+}
+INPUT {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000
+}
+TEXTAREA {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000
+}
+SELECT {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000
+}
+INPUT.button {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #efefef
+}
+INPUT.liteoption {
+	FONT-WEIGHT: normal; BACKGROUND-COLOR: #fafafa
+}
+INPUT.mainoption {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #fafafa
+}
+INPUT.post {
+	BACKGROUND-COLOR: #ffffff
+}
+TEXTAREA.post {
+	BACKGROUND-COLOR: #ffffff
+}
+SELECT {
+	BACKGROUND-COLOR: #ffffff
+}
+TD.cat {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND-IMAGE: url(images/cellpic2.gif); PADDING-BOTTOM: 3px; PADDING-TOP: 3px; HEIGHT: 25px
+}
+TH.cat {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND-IMAGE: url(images/cellpic2.gif); PADDING-BOTTOM: 3px; PADDING-TOP: 3px; HEIGHT: 25px
+}
+TD.row1 {
+	BACKGROUND: url(images/_row1.gif) #f5f5f5 repeat-x
+}
+TD.row2 {
+	BACKGROUND: url(images/_row2.gif) #ecedf3 repeat-x
+}
+TD.spacerow {
+	BACKGROUND-IMAGE: url(images/cellpic1.gif); HEIGHT: 4px
+}
+TD.rowpic {
+	BACKGROUND-IMAGE: url(images/cellpic3.gif); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(images/cellpic1.gif); COLOR: #f1f1f1; HEIGHT: 25px; BACKGROUND-COLOR: #445395
+}
+.bodyline {
+	BORDER-RIGHT: #98aab1 1px solid; BORDER-TOP: #98aab1 1px solid; BORDER-LEFT: #98aab1 1px solid; BORDER-BOTTOM: #98aab1 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.cat {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff
+}
+.code {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Courier, 'Courier New', sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.copyright {
+	FONT-SIZE: 10px; COLOR: #444444; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+.forumline {
+	BORDER-RIGHT: #d0d5e7 2px solid; BORDER-TOP: #d0d5e7 2px solid; BORDER-LEFT: #d0d5e7 2px solid; BORDER-BOTTOM: #d0d5e7 2px solid; BACKGROUND-COLOR: #ffffff
+}
+.forumlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #445395
+}
+.gen {
+	FONT-SIZE: 12px
+}
+.gen {
+	COLOR: #000000
+}
+.genmed {
+	COLOR: #000000
+}
+.gensmall {
+	COLOR: #000000
+}
+.genmed {
+	FONT-SIZE: 11px
+}
+.gensmall {
+	FONT-SIZE: 10px
+}
+.helpline {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #dee3e7; BORDER-BOTTOM-STYLE: none
+}
+.mainbody {
+	PADDING-RIGHT: 9px; PADDING-LEFT: 9px; PADDING-BOTTOM: 9px; PADDING-TOP: 9px
+}
+.mainmenu {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+.maintitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #000000; LINE-HEIGHT: 120%; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #000000; LINE-HEIGHT: 120%; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #000000; LINE-HEIGHT: 120%; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.name {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+.postbody {
+	FONT-SIZE: 12px
+}
+.postdetails {
+	FONT-SIZE: 10px; COLOR: #000000
+}
+.quote {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #444444; LINE-HEIGHT: 125%; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.topictitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
