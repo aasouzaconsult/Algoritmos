@@ -1,0 +1,23 @@
+Vladia,
+ 
+segue aqui um exemplo de como adicionar listas(tabelas) na inicializacao do sistema. O codigo que estou enviando esta sendo usado pela SSPDS. Imaginei que voce poderia usar como referência.
+ 
+Esse linha de código
+ 
+<plug-in className="com.expertcop.plugin.StartUp"></plug-in>
+ 
+deve ser colocada no arquivo struts-config.xml antes da linha
+
+</struts-config>
+ 
+que indica final do arquivo de configuração.
+ 
+A linha adicionada informa a aplicação que deve executar a classe "com.expertcop.plugin.StartUp" na inicialização do sistema.
+ 
+Estou mandando em anexo um arquivo de startup que utilizamos aqui na SSPDS. Basta voce modificar para a realidade do ExpertCop,  colocando as classes corretas.
+ 
+Se tiver alguma duvida pode me ligar 91041132.
+ 
+Até...
+ 
+ 
