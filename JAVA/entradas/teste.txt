@@ -1,0 +1,26 @@
+17
+A S
+A D
+A X
+S F
+D F
+X C
+C F
+D X
+F R
+S R
+R E
+F E
+C V
+E V
+E W
+V Z
+W Z
+4
+F
+C
+R
+W
+1
+A
+Z

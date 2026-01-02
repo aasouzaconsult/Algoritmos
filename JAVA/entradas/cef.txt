@@ -1,0 +1,15 @@
+7
+Portão-de-Login Praça-Central
+Praça-Central Obelisco
+Praça-Central Estátua-do-Presidente-Ervilhas
+Praça-Central Cemitério
+Estátua-do-Presidente-Ervilhas Cemitério
+Casa-da-Marquesa Estátua-do-Presidente-Ervilhas
+Cemitério Casa-da-Marquesa
+3
+Praça-Central
+Obelisco
+Cemitério
+1
+Portão-de-Login
+Casa-da-Marquesa
