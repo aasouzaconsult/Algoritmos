@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www2.fundao.pro.br/articles.asp?cod=46 -->
+<HTML><HEAD><TITLE>Fundão da Computação - Função de Ackermann</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="" name=keywords>
+<META 
+content="Famosa função da matemática que ilustra bem o uso de recursão em algoritmos." 
+name=description>
+<META http-equiv=content-style-type content=text/css><LINK 
+href="Função de Ackermann_arquivos/fundao.css" type=text/css rel=STYLESHEET>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY bottomMargin=0 vLink=#666666 aLink=#990000 link=#990000 bgColor=#ffffff 
+leftMargin=0 topMargin=0 rightMargin=0 marginwidth="0" marginheight="0"><A 
+name=PageTop></A><!-- // Logo Superior --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=left width="50%" bgColor=#eeeeee><A 
+      href="http://www2.fundao.pro.br/default.asp"><IMG height=100 
+      src="Função de Ackermann_arquivos/fundao2.gif" width=430 border=0></A></TD>
+    <TD align=right width="50%" 
+  bgColor=#eeeeee><!--// Outros Banners //--></TD></TR></TBODY></TABLE><!-- // Logo Superior ---><!-- // Top Menu Bar --->
+<TABLE cellSpacing=1 cellPadding=0 width="100%" bgColor=white border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/delphi"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Delphi</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/linguagens/java"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Java</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Linux</B></FONT> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/4ano/hipermidia"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Webdesign</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/3ano/arquitetura"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Hardware</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/2ano/assembly/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Assembly</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/games.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Games</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/resources/ferramentas/dotnet/"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>.NET</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/geral.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Geral</B></FONT></A> </TD>
+    <TD vAlign=center align=middle width="10%" bgColor=#000000><A 
+      href="http://www2.fundao.pro.br/pages/listas.asp"><FONT 
+      face="Arial, Helvetica, sans-serif" color=#ffffff 
+      size=1><B>Listas</B></FONT></A> </TD></TR></TBODY></TABLE><!-- // Top Menu Bar --->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR><!--// MENU LATERAL (ESQ) -->
+    <TD vAlign=top align=left width=143 bgColor=#eeeeee><IMG height=35 
+      alt="Tudo é tão poCivio quanto Siqueira" hspace=0 
+      src="Função de Ackermann_arquivos/mensagem.gif" width=143 align=center 
+      border=0 valign="center"> 
+      <TABLE cellSpacing=0 cellPadding=0 width=143 border=0><!----Áreas---->
+        <TBODY>
+        <TR>
+          <TD><IMG height=19 alt="" hspace=0 
+            src="Função de Ackermann_arquivos/artigos.gif" width=143 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/default.asp">- 
+            Home</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Algoritmos comentados e implementados';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/algoritmos">- 
+            Algoritmos</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 2º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/2ano">- Segundo 
+            Ano</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 3º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/3ano">- Terceiro Ano 
+            </A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Códigos, artigos e outros materiais sobre matérias do 4º ano.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/4ano"><NOBR>- Quarto Ano 
+            </NOBR></A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Todas as áreas abrangidas pelo Curso de Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/todas.asp">- Todas as 
+            Matérias</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Artigos, códigos e downloads sobre várias ferramentas de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/ferramentas">- 
+            Ferramentas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Amplo material sobre as mais variadas linguagens de programação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/linguagens/">- 
+            Linguagens</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice de todos os códigos disponíveis no site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/codigos.asp">- Códigos</A> 
+            <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Procure sobre algo no Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/busca.asp">- Busca</A> <IMG 
+            hspace=0 src="Função de Ackermann_arquivos/imgNavNew.gif" 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Listagem de sites de interesse para todos os programadores.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/bookmark.asp">- 
+            Bookmark</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Dicas de segurança.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/resources/seguranca/default.asp">- 
+            Segurança</A> <BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja desafios interessantes';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/desafios.asp">- 
+            Desafios</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Índice geral do Site do Fundão';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/indice.asp">- 
+            Índice</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Fórum do Fundão sobre programação';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www.forumnow.com/basic/topicos.asp?grupodiscussao=13872" 
+            target=new>- Fórum<BR>&nbsp;&nbsp;</A><A id=black 
+            onmouseover="status='Notícias para o pessoal que já saiu da universidade.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/rodo.asp">- Rodô</A><BR></TD></TR><!--//Áreas----><!----About---->
+        <TR>
+          <TD><IMG height=19 alt="" 
+            src="Função de Ackermann_arquivos/sobre.gif" width=143 
+            border=0><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Conheça quem faz o Fundão.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/colaboradores.asp">- 
+            Colaboradores</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entenda o que é e o qual a origem do Fundão da Computação.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/whatis.asp">- O que é o 
+            Fundão?</A><BR></TD></TR><!--//About----><!----Contact---->
+        <TR>
+          <TD bgColor=#cccccc height=19>
+            <DIV align=center><FONT color=#333333><IMG height=19 alt="" 
+            src="Função de Ackermann_arquivos/contato.gif" width=143 
+            border=0></FONT></DIV></TD></TR>
+        <TR>
+          <TD>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Entre em contato enviando críticas e sugestões para o site.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/contato.asp">- 
+            Contato</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Veja os resultados das últimas pesquisas realizadas.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/pesquisa.asp">- 
+            Pesquisas</A><BR>&nbsp;&nbsp;<A id=black 
+            onmouseover="status='Assine nossa newsletter e receba no seu email as novidades.';return true;" 
+            style="TEXT-DECORATION: none" onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/pages/newsletter.asp">- 
+            Newsletter</A><BR></TD></TR><!--//Contact----></TBODY></TABLE><!--//Links Legais-->
+      <DIV align=center><BR>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#cccccc>
+            <TABLE cellSpacing=1 cellPadding=2 border=0>
+              <TBODY>
+              <TR>
+                <TH bgColor=#cccccc><FONT color=#333333>Links 
+              Legais</FONT></TH></TR>
+              <TR>
+                <TD bgColor=#eeeeee><IMG hspace=0 
+                  src="Função de Ackermann_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='TV ao vivo na Internet';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.alltv.com.br/" 
+                  target=_blank>AllTV</A><BR><IMG hspace=0 
+                  src="Função de Ackermann_arquivos/pfeil_black(1).gif" 
+                  border=0><A 
+                  onmouseover="status='Site sobre Cinema e HQs';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.universohq.com/" target=_blank>Universo 
+                  HQ</A><BR><IMG hspace=0 
+                  src="Função de Ackermann_arquivos/pfeil_black(1).gif" 
+                  border=0><A onmouseover="status='Cinema';return true;" 
+                  onmouseout="status='';return true;" 
+                  href="http://www.e-pipoca.com.br/" 
+                  target=_blank>e-pipoca</A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><BR 
+      clear=all><BR><!--//Links Legais--><BR><BR><BR><BR><BR></TD><!--// MENU LATERAL (ESQ) --><!--// REGIAO CENTRAL ------>
+    <TD vAlign=top width="100%" colSpan=2>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" align=center border=0 
+      valign="top">
+        <TBODY>
+        <TR><!-- // Primeira Coluna do Meio //-->
+          <TD vAlign=top>&nbsp; <BR></TD><!-- // Primeira Coluna do Meio //--><!-- // Segunda Coluna do Meio //-->
+          <TD vAlign=top align=middle>
+            <TABLE width="97%" border=0 valign="top">
+              <TBODY>
+              <TR>
+                <TD vAlign=top height=400><BR><A 
+                  href="http://www2.fundao.pro.br/resources/algoritmos/"><FONT 
+                  face=Tahoma color=#990000 size=4><B>Algoritmos</A></B></FONT> 
+                  <FONT face=Tahoma color=#990000 size=4><B>» Função de 
+                  Ackermann</B></FONT></FONT> 
+                  <TABLE width="95%" align=left border=0>
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=#990000 
+height=2></TD></TR></TBODY></TABLE><BR><BR>
+                  <TABLE width="100%" align=right border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>Famosa função da matemática que ilustra bem o uso de 
+                        recursão em algoritmos. <BR><BR>
+                        <DIV align=right>Agosto/2002<FONT 
+                        color=white>&nbsp;&nbsp;&nbsp;</FONT></DIV></TD></TR></TBODY></TABLE><BR><BR><BR><BR><BR><!-- Listagem //-->
+                  <TABLE width="95%" align=center border=0>
+                    <TBODY>
+                    <TR bgColor=#ffffff height=30>
+                      <TD width="100%"><FONT size=2>A função de Ackermann é o 
+                        exemplo mais simples de uma <U>função total</U><A 
+                        href="http://www2.fundao.pro.br/articles.asp?cod=46#sup1"><SUP>1</SUP></A> 
+                        <U>bem definida</U><A 
+                        href="http://www2.fundao.pro.br/articles.asp?cod=46#sup2"><SUP>2</SUP></A> 
+                        que é computável mas não é <U>primitiva recursiva</U><A 
+                        href="http://www2.fundao.pro.br/articles.asp?cod=46#sup3"><SUP>3</SUP></A>, 
+                        fornecendo um contra- exemplo para a crença do começo do 
+                        século 20 de que toda função computável era também 
+                        primitiva recursiva (Dötzel 1991). Ela cresce mais 
+                        rápido do que uma função exponencial, ou até mesmo que 
+                        uma função exponencial múltipla.<BR><BR>A função de 
+                        Ackermann é definida da seguinte forma: 
+                        <BLOCKQUOTE><PRE><FONT color=darkgreen size=2>
+A(x,y) =
+{ 
+  y+1  se x=0;
+  A(x-1,1)   se y=0;
+  A(x-1,A(x,y-1)) do contrário;
+}</FONT></PRE></BLOCKQUOTE>Se calcularmos as três 
+                        primeiras linhas (onde 'linha' significa que m é fixado 
+                        e n varia), você obtemos a seguinte tabela: <BR><BR>
+                        <TABLE align=center border=1>
+                          <TBODY>
+                          <TR>
+                            <TD bgColor=darkgray>&nbsp;</TD>
+                            <TD align=middle colSpan=11><B>n</B></TD></TR>
+                          <TR>
+                            <TD><B>m</B>
+                            <TD align=right><B>0</B>
+                            <TD align=right><B>1</B>
+                            <TD align=right><B>2</B>
+                            <TD align=right><B>3</B>
+                            <TD align=right><B>4</B>
+                            <TD align=right><B>5</B>
+                            <TD align=right><B>6</B>
+                            <TD align=right><B>7</B>
+                            <TD align=right><B>8</B>
+                            <TD align=right><B>9</B> 
+                            <TD align=right><B>10</B> 
+                          <TR>
+                            <TD><B>0</B>
+                            <TD align=right>1
+                            <TD align=right>2
+                            <TD align=right>3
+                            <TD align=right>4
+                            <TD align=right>5
+                            <TD align=right>6
+                            <TD align=right>7
+                            <TD align=right>8
+                            <TD align=right>9
+                            <TD align=right>10
+                            <TD align=right>11 
+                          <TR>
+                            <TD><B>1</B>
+                            <TD align=right>2
+                            <TD align=right>3
+                            <TD align=right>4
+                            <TD align=right>5
+                            <TD align=right>6
+                            <TD align=right>7
+                            <TD align=right>8
+                            <TD align=right>9
+                            <TD align=right>10
+                            <TD align=right>11
+                            <TD align=right>12 
+                          <TR>
+                            <TD><B>2</B>
+                            <TD align=right>3
+                            <TD align=right>5
+                            <TD align=right>7
+                            <TD align=right>9
+                            <TD align=right>11
+                            <TD align=right>13
+                            <TD align=right>15
+                            <TD align=right>17
+                            <TD align=right>19
+                            <TD align=right>21
+                            <TD align=right>23 
+                          <TR>
+                            <TD><B>3</B>
+                            <TD align=right>5
+                            <TD align=right>13
+                            <TD align=right>29
+                            <TD align=right>61
+                            <TD align=right>125
+                            <TD align=right>253
+                            <TD align=right>509
+                            <TD align=right>1021
+                            <TD align=right>2045
+                            <TD align=right>4093
+                            <TD align=right>8189 </TR></TBODY></TABLE>Uma definição 
+                        equivalente é: 
+                        <BLOCKQUOTE><PRE><FONT color=darkgreen size=2>
+A(0, n) = n + 1 
+A(1, n) = 2 + (n + 3) - 3 
+A(2, n) = 2 × (n + 3) - 3 
+A(3, n) = 2 n + 3 - 3 
+A(4, n) = 22...2 - 3        (n + 3 terms) 
+...</FONT></PRE></BLOCKQUOTE>lembre que 
+                        2<SUP>2<SUP>2<SUP>2</SUP></SUP></SUP> = 65536 e não 
+                        ((2<SUP>2</SUP>)<SUP>2</SUP>)<SUP>2</SUP> = 
+                        2<SUP>2×2×2</SUP> = 256<BR><BR><B>Códigos</B> 
+                        <LI><B><FONT color=darkgreen><A 
+                        href="http://www2.fundao.pro.br/files/ackermann.java">Ackermann</A></FONT></B> 
+                        - Código em java com recursividade dupla. 
+                        <LI><B><FONT color=darkgreen><A 
+                        href="http://www2.fundao.pro.br/files/ackermann2.java">Ackermann2</A></FONT></B> 
+                        - Código em java com recursividade simples. <BR><BR>
+                        <HR align=center>
+                        <BR><A name=sup1></A><SUP>1</SUP> <B>Bem Definida</B>: 
+                        Uma expressão é dita "bem definida" (ou não- ambüígua) 
+                        se sua definição atribui a ela uma única interpretação 
+                        ou valor. Do contrário, a expressão é dita ser não bem 
+                        definida ou ser ambüígua.<BR><BR><A 
+                        name=sup2></A><SUP>2</SUP> <B>Função Total</B>: Uma 
+                        função definida para todos os possíveis valores de 
+                        entrada.<BR><BR><A name=sup3></A><SUP>3</SUP> 
+                        <B>Primitiva Recursiva</B>: Uma função que pode ser 
+                        implementada usando apenas for-loops é chamada de 
+                        primitiva recursiva. (Em contraste, uma função 
+                        computável pode ser codificada usando uma combinação de 
+                        laços for e while, ou de laços while apenas.) 
+                        <BR><BR><BR>
+                        <CENTER><A 
+                        href="javascript:history.go(-1);">Voltar</A></CENTER><BR><BR><BR></FONT></LI></TD></TR></TBODY></TABLE><!-- Listagem //--></TD></TR></TBODY></TABLE></TD><!-- // Segunda Coluna do Meio //--><!-- // Terceira Coluna do Meio //-->
+          <TD vAlign=top width=8><BR><BR clear=all><BR>
+            <DIV align=center> </DIV><BR></TD><!-- // Terceira Coluna do Meio //--><!--// Faixa Divisória //-->
+          <TD width=1 bgColor=#eeeeee><IMG height=1 
+            src="Função de Ackermann_arquivos/single_pix.gif" width=1> </TD><!--// Faixa Divisória //--></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=2><!----Bottom Banner---->&nbsp; <!--//Bottom Banner----></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp;</TD>
+          <TD align=left width="99%" bgColor=#ffffff colSpan=2><A 
+            onmouseover="status='Voltar para cima';return true;" 
+            onmouseout="status='';return true;" 
+            href="http://www2.fundao.pro.br/articles.asp?cod=46#PageTop"><IMG 
+            height=15 alt="Voltar para cima" hspace=5 
+            src="Função de Ackermann_arquivos/up_darkgray.jpeg" width=14 
+            vspace=5 border=0></A><BR></TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#000000>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#eeeeee colSpan=2>Copyright © 
+            1999,2003 Fundão Inc. - All rights reserved. </TD>
+          <TD width=1 bgColor=#000000>&nbsp; </TD></TR>
+        <TR>
+          <TD width=8 bgColor=#ffffff>&nbsp; </TD>
+          <TD align=middle width="99%" bgColor=#ffffff colSpan=3><FONT 
+            color=white>&nbsp; 
+</FONT></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>
