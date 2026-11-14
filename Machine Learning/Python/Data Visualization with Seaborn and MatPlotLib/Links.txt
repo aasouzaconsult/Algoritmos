@@ -1,5 +1,0 @@
-Seaborn (gráfico estatísticos)
-https://www.youtube.com/watch?v=CWhFc5zjzWY&feature=youtu.be
-
-Matplotlib
-https://www.youtube.com/watch?v=H7RVxhxVCME&feature=youtu.be

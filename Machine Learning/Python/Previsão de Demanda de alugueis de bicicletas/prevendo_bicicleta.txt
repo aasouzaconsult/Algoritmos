@@ -1,4 +1,0 @@
-Link: https://www.youtube.com/watch?v=m8FrAx42okI
-
-Linear Regression
-Decision Tree Regressor
