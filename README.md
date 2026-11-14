@@ -1,168 +1,142 @@
 <div align="center">
 
-# 🧩 Algoritmos e Estruturas de Dados
-### Entender o problema. Construir a solução. Analisar o resultado.
+# 🧩 Algoritmos e Materiais para Dados
+### Programação · BI e Analytics · Inteligência Artificial · Bases de dados
 
-**Uma coleção para estudar programação, comparar abordagens e desenvolver raciocínio computacional.**
+**Um ponto de entrada para encontrar códigos, estudos, referências e dados para praticar.**
 
-**Java · Python · PHP · Machine Learning com Python e R**
+[📊 BI / Analytics](https://drive.google.com/drive/folders/16dTG4E20AzdaVPXN1Issy50nYMIiHQGD?usp=sharing) · [🤖 IA, NLP e Python](https://drive.google.com/drive/folders/1cQbk6w5AqhwC_CAfLynIc75-8lJd11s_?usp=sharing) · [🗂️ Fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing)
 
-[Explore a coleção](#explore-a-coleção) · [Catálogo por assunto](#catálogo-por-assunto) · [Trilha de estudo](#trilha-de-estudo-sugerida) · [Como executar](#como-explorar-e-executar) · [Livros e curso](#livros-artigos-e-curso)
+[Guia de navegação](#onde-encontrar-cada-material) · [Acervos no Drive](#materiais-no-google-drive) · [Java e PHP no GitHub](#códigos-no-github) · [Como estudar](#como-aproveitar-os-materiais)
 
 </div>
 
 ---
 
-## O que é um algoritmo?
+## Onde encontrar cada material
 
-Um **algoritmo** é uma sequência finita de instruções bem definidas para resolver um problema ou realizar uma tarefa.
+Os materiais estão organizados em **dois locais**: este repositório mantém os códigos de **Java e PHP**, e os acervos temáticos abaixo são acessados pelo **Google Drive**.
 
-Estudar algoritmos envolve mais do que chegar a uma saída: é compreender **por que uma solução funciona**, quais entradas ela aceita e como seu consumo de tempo e memória cresce com o tamanho do problema.
+**Procurando Python, Machine Learning, IA, BI ou bases de dados? Comece pelos três links do Drive.** As antigas pastas locais de Python e Machine Learning não fazem mais parte da estrutura deste repositório.
 
-Este repositório reúne códigos auxiliares, exercícios e materiais de diferentes épocas para apoiar esse aprendizado — dos fundamentos da programação a estruturas de dados, grafos e aplicações de aprendizado de máquina.
-
-## Explore a coleção
-
-| Área | Conteúdo | Acesso |
-| --- | --- | --- |
-| **Java** | Algoritmos, estruturas de dados, orientação a objetos, interfaces gráficas e exemplos de integração com banco de dados. | [Abrir JAVA](JAVA/) |
-| **Python** | Busca, ordenação, árvores, grafos, programação dinâmica, manipulação de strings e exercícios. | [Abrir Python](Python/) |
-| **PHP** | Algoritmos, recursão, estruturas de dados, orientação a objetos e problemas de programação. | [Abrir PHP](PHP/) |
-| **Machine Learning** | Scripts, notebooks, bases de exemplo e estudos em Python e R. | [Abrir Machine Learning](Machine%20Learning/) |
-
-**Escolha por objetivo:** para praticar uma estrutura ou técnica, consulte o catálogo abaixo. Para estudar uma linguagem, comece pela pasta correspondente. Para explorar dados e modelos, siga para Machine Learning.
-
-## Catálogo por assunto
-
-Os links apontam para exemplos e pastas existentes. A seleção serve como porta de entrada; há outras implementações e variações na coleção.
-
-### 🔢 Ordenação e busca
-
-| Tema | Exemplos para explorar |
+| Quero encontrar… | Onde acessar |
 | --- | --- |
-| **Bubble Sort** | [Python](Python/bubble_sort.py) · [PHP](PHP/bubble_sort.php) |
-| **Insertion Sort** | [Python](Python/insertion_sort.py) |
-| **Selection Sort** | [Python](Python/selection_sort.py) · [PHP](PHP/selection_sort.php) |
-| **Merge Sort** | [Python](Python/merge_sort.py) · [PHP](PHP/merge_sort.php) |
-| **Quick Sort** | [Python](Python/quicksort.py) · [PHP](PHP/quick_sort.php) |
-| **Counting e Radix Sort** | [Counting Sort em Python](Python/sort/counting_sort/) · [Radix Sort em Python](Python/radixsort.py) |
-| **Busca binária** | [Java](JAVA/BinarySearch.java) · [Python](Python/BinarySearch.py) |
-| **Busca sequencial** | [Python](Python/Busca%20Sequencial.py) |
+| **Power BI, Tableau, projetos e referências de BI** | [📊 BI / Analytics](https://drive.google.com/drive/folders/16dTG4E20AzdaVPXN1Issy50nYMIiHQGD?usp=sharing) |
+| **Python, IA, NLP, Machine Learning, agentes ou RAG** | [🤖 IA, NLP e Python](https://drive.google.com/drive/folders/1cQbk6w5AqhwC_CAfLynIc75-8lJd11s_?usp=sharing) |
+| **Bases e arquivos para exercitar análises e modelos** | [🗂️ Fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing) |
+| **Algoritmos, estruturas de dados e exemplos em Java** | [☕ Pasta JAVA no GitHub](JAVA/) |
+| **Algoritmos e exercícios em PHP** | [🐘 Pasta PHP no GitHub](PHP/) |
 
-Para ampliar a comparação: [ordenação em Python](Python/sort/) e [ordenação em PHP](PHP/sorting/).
+## Materiais no Google Drive
 
-### 🌳 Estruturas de dados
+### 📊 BI / Analytics
 
-| Tema | Exemplos para explorar |
+**[→ Abrir o acervo de BI / Analytics](https://drive.google.com/drive/folders/16dTG4E20AzdaVPXN1Issy50nYMIiHQGD?usp=sharing)**
+
+Materiais para estudar análise de dados, visualização e Business Intelligence. O acervo está organizado em **Projetos e Exemplos**, **Código**, **Cursos**, **Guias e Referências**, **Modelos e Documentação**, **Relatórios e Pesquisas** e **Imagens**.
+
+Na área de **Projetos e Exemplos**, você encontra pastas de **Power BI**, **Tableau** e **Qualidade de Dados**.
+
+**Comece aqui se deseja:** explorar exemplos de BI, consultar referências ou buscar apoio para desenvolver análises e visualizações.
+
+### 🤖 IA, NLP e Python
+
+**[→ Abrir o acervo de IA, NLP e Python](https://drive.google.com/drive/folders/1cQbk6w5AqhwC_CAfLynIc75-8lJd11s_?usp=sharing)**
+
+Códigos e materiais de estudo sobre programação, análise de dados e inteligência artificial. Inclui áreas de **Código**, **Cursos e apresentações**, **Guias e Referências**, **Artigos**, **Anotações e Links**, **Planilhas de Estudo**, **Vídeos**, **Revistas** e **Imagens**.
+
+Dentro de **Código**, os assuntos estão organizados em pastas como:
+
+| Interesse | Pastas para procurar |
 | --- | --- |
-| **Listas encadeadas** | [Python](Python/data_structures/lists/) · [PHP](PHP/linked_lists/) |
-| **Pilhas e filas** | [Python](Python/stack_queues/) · [PHP](PHP/stacks_and_queues/) |
-| **Árvores** | [Árvores em Python](Python/data_structures/trees/) · [Árvore binária em Java](JAVA/BinaryTree.java) |
-| **Heaps** | [Python](Python/data_structures/heaps/) · [Heap máximo em Java](JAVA/BinaryMaxHeap.java) |
-| **Tabelas hash** | [Python](Python/data_structures/hashes/) |
-| **Representação de grafos** | [Python](Python/data_structures/graphs/) · [Lista de adjacência em Java](JAVA/AdjacencyList.java) |
+| **Primeiros passos em dados** | Fundamentos de Python; Estatística; Análise e Preparação de Dados; Visualização de Dados. |
+| **Modelagem e aprendizado de máquina** | Machine Learning; Regressão; Classificação; Agrupamento; Redes Neurais; Séries Temporais. |
+| **Linguagem e IA Generativa** | NLP; LLMs e IA Generativa; RAG e Bancos Vetoriais; Agentes e MCP. |
+| **Integração e aplicações** | Bancos de Dados e Integração; APIs e Aplicações; Automação; Engenharia de Dados e Nuvem. |
+| **Outros estudos** | Visão Computacional; Aprendizado por Reforço; Padrões e Regras de Associação; Projetos Aplicados; Cursos Práticos. |
 
-### 🕸️ Grafos e caminhos
+**Comece aqui se deseja:** estudar Python, explorar técnicas de IA ou acompanhar exemplos de integração de modelos com aplicações.
 
-| Tema | Exemplos para explorar |
+### 🗂️ Fontes de dados
+
+**[→ Abrir o acervo de fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing)**
+
+Bases e arquivos para praticar exploração, preparação de dados, visualização e Machine Learning. A pasta principal reúne as áreas **Dados** e **WEKA - mineração**.
+
+Em **Dados**, há arquivos em formatos como **CSV, Excel e Parquet**, além de materiais auxiliares e pastas como **BasesTestes** e **Fontes para Análise de BI**. Entre os exemplos disponíveis estão bases de **Titanic**, **crédito**, **fraude**, **vendas**, **faturas** e **Censo Escolar**.
+
+**Comece aqui se deseja:** encontrar uma base para um exercício, testar uma técnica ou construir uma análise. Consulte a documentação disponível para entender origem, significado dos campos e unidades antes de interpretar os resultados.
+
+### Como localizar um arquivo no Drive
+
+1. **Escolha o acervo pelo assunto** usando os links acima.
+2. **Abra a subpasta indicada** na descrição: por exemplo, “Código” para implementações ou “Projetos e Exemplos” para estudos de BI.
+3. **Procure pelo tema ou nome do arquivo** com os recursos de pesquisa do Drive. Quando disponível, restrinja a busca à pasta escolhida.
+4. **Leia as orientações do próprio material** e baixe os arquivos auxiliares necessários para o exemplo.
+
+**Clonar este repositório baixa os arquivos do GitHub. Os materiais do Drive são acessados separadamente pelos links acima.**
+
+## Códigos no GitHub
+
+| Pasta | Conteúdo |
 | --- | --- |
-| **Busca em largura — BFS** | [Python](Python/breadth_first_search.py) |
-| **Busca em profundidade — DFS** | [Python](Python/depth_first_search.py) |
-| **Caminhos mínimos — Dijkstra** | [Python](Python/dijkstra.py) |
-| **Árvore geradora mínima — Kruskal** | [Python](Python/kruskal.py) |
-| **Árvore geradora mínima — Prim** | [Python](Python/prim.py) |
-| **Ordenação topológica** | [Python](Python/topological_sort.py) |
+| [**JAVA/**](JAVA/) | Algoritmos, estruturas de dados, orientação a objetos, interfaces gráficas e exemplos de integração com banco de dados. |
+| [**PHP/**](PHP/) | Algoritmos de ordenação, recursão, listas, pilhas, filas, árvores, orientação a objetos e problemas de programação. |
 
-Ao comparar algoritmos de grafos, confira as hipóteses: grafo dirigido ou não dirigido, existência de pesos e restrições sobre os valores das arestas.
+### Atalhos por assunto
 
-### 🧠 Recursão, programação dinâmica e resolução de problemas
-
-| Tema | Exemplos para explorar |
+| Tema | Exemplos locais |
 | --- | --- |
-| **Fibonacci** | [Programação dinâmica em Python](Python/dynamic_programming/fibonacci.py) |
-| **Problema da mochila — Knapsack** | [Python](Python/knapsack.py) |
-| **Subsequência comum — LCS** | [Python](Python/lcs.py) · [PHP](PHP/longest_common_subsequence.php) |
-| **Corte de barras** | [Python](Python/dynamic_programming/rod_cutting.py) |
-| **Distância de edição** | [Python](Python/dynamic_programming/edit_distance.py) |
-| **Torre de Hanói** | [Python](Python/tower_of_hanoi.py) · [PHP](PHP/tower_of_hanoi.php) |
-| **Oito rainhas** | [PHP](PHP/eight_queens.php) |
+| **Ordenação** | [Bubble Sort em PHP](PHP/bubble_sort.php) · [Merge Sort em PHP](PHP/merge_sort.php) · [Quick Sort em PHP](PHP/quick_sort.php) |
+| **Busca** | [Busca binária em Java](JAVA/BinarySearch.java) |
+| **Árvores e heaps** | [Árvore binária em Java](JAVA/BinaryTree.java) · [Heap máximo em Java](JAVA/BinaryMaxHeap.java) |
+| **Grafos** | [Lista de adjacência em Java](JAVA/AdjacencyList.java) |
+| **Listas encadeadas** | [Exemplos em PHP](PHP/linked_lists/) |
+| **Pilhas e filas** | [Exemplos em PHP](PHP/stacks_and_queues/) |
+| **Programação dinâmica** | [Exemplos em PHP](PHP/dynamic_programming/) |
+| **Recursão e desafios** | [Torre de Hanói](PHP/tower_of_hanoi.php) · [Oito rainhas](PHP/eight_queens.php) |
+| **Strings** | [Exemplos em PHP](PHP/strings/) |
+| **Matemática** | [Algoritmo de Euclides — MDC em Java](JAVA/Alg.%20de%20Euclides/MDC.java) |
 
-### 🔤 Strings, números e codificação
+### Estrutura atual do repositório
 
-| Tema | Exemplos para explorar |
+```text
+Algoritmos/
+├── README.md    # Guia e links para os acervos
+├── JAVA/        # Códigos e materiais Java
+└── PHP/         # Códigos e materiais PHP
+```
+
+## Como aproveitar os materiais
+
+Um **algoritmo** é uma sequência finita de instruções bem definidas para resolver um problema. Ao estudar um exemplo, procure compreender a solução e suas condições de uso.
+
+| Passo | O que observar |
 | --- | --- |
-| **Busca de padrões — Rabin-Karp** | [Python](Python/rabin_karp_search.py) |
-| **Codificação de Huffman** | [Python](Python/huffman_code.py) |
-| **Anagramas** | [Python](Python/is_anagram.py) |
-| **Primalidade** | [Python](Python/is_prime.py) |
-| **Máximo divisor comum — Euclides** | [Java](JAVA/Alg.%20de%20Euclides/MDC.java) |
-| **Multiplicação de matrizes** | [Python](Python/matrix_multiplication.py) |
+| **Entenda o problema** | Quais são as entradas, as saídas e as pré-condições? |
+| **Acompanhe a execução** | Como os valores e as estruturas mudam a cada etapa? |
+| **Explore os limites** | O que acontece com entradas vazias, repetidas ou fora do esperado? |
+| **Compare abordagens** | Como variam a clareza, o tempo e o uso de memória? |
+| **Documente o aprendizado** | Registre suas hipóteses, resultados e dúvidas. |
 
-## 🤖 Dados e Machine Learning
+Para materiais de BI e IA, acrescente a pergunta de negócio, o significado dos dados e os critérios para avaliar o resultado.
 
-A pasta [Machine Learning](Machine%20Learning/) reúne uma frente complementar aos algoritmos clássicos:
+## Como executar os exemplos locais
 
-| Conteúdo | Onde explorar |
-| --- | --- |
-| **Notebooks e scripts Python** | [Machine Learning/Python](Machine%20Learning/Python/) |
-| **Exemplos em R** | [Machine Learning/R](Machine%20Learning/R/) |
-| **Bases para os estudos** | [Machine Learning/Data](Machine%20Learning/Data/) |
-| **Visão geral do material** | [README de Machine Learning](Machine%20Learning/README.md) |
-| **Minimax e jogo da velha** | [Projeto e documentação](Machine%20Learning/Python/Algoritmo%20Minimax%20-%20Jogo%20da%20Velha/README.md) |
-
-As dependências e os caminhos de dados variam entre exemplos. Leia as importações e a documentação de cada estudo antes de executá-lo.
-
-[Leitura: o que é Machine Learning?](https://medium.com/blog-do-zouza/o-que-%C3%A9-machine-learning-5e7e98453985)
-
-## Trilha de estudo sugerida
-
-| Etapa | Foque em | Prática sugerida |
-| --- | --- | --- |
-| **1. Fundamentos** | Variáveis, decisões, laços e funções. | Explique a entrada e a saída de um programa curto. |
-| **2. Coleções e strings** | Listas, arrays, índices e manipulação de texto. | Teste entradas vazias, repetidas e com um único elemento. |
-| **3. Busca e ordenação** | Pré-condições, comparações e movimentações. | Compare duas soluções para a mesma entrada. |
-| **4. Estruturas de dados** | Pilhas, filas, listas, árvores e hashes. | Observe como cada estrutura representa e altera seus dados. |
-| **5. Grafos** | Vértices, arestas, percursos e caminhos. | Desenhe um grafo pequeno e acompanhe a execução. |
-| **6. Estratégias** | Recursão, divisão e conquista e programação dinâmica. | Identifique subproblemas e trabalho repetido. |
-| **7. Aplicações em dados** | Preparação, modelos e avaliação. | Explore um estudo de Machine Learning e suas limitações. |
-
-A trilha é uma sugestão de navegação, não uma ordem obrigatória dos arquivos.
-
-## Como explorar e executar
-
-### 1. Obtenha os materiais
-
-Você pode navegar pelos arquivos no GitHub, baixar um exemplo ou clonar o repositório:
+Você pode consultar os arquivos no GitHub ou clonar o repositório:
 
 ```bash
 git clone https://github.com/aasouzaconsult/Algoritmos.git
 cd Algoritmos
 ```
 
-### 2. Confira o contexto do arquivo
+A coleção contém exemplos independentes. Confira versão da linguagem, dependências, arquivos auxiliares e ponto de entrada antes de executar.
 
-A coleção reúne exemplos independentes, não uma aplicação única. Antes de executar:
-
-- Verifique a versão da linguagem, as importações e os arquivos auxiliares.
-- Confira se há um ponto de entrada ou se o arquivo apenas define classes e funções.
-- Leia os comentários, exemplos de uso e créditos.
-- Identifique caminhos de dados, entradas esperadas e dependências externas.
-
-**Python:** existem arquivos com sintaxe de Python 2, como `print valor` e `xrange`. Eles precisam de revisão para uso com Python 3; não basta trocar o comando de execução. Confirme também divisões inteiras, imports e APIs de bibliotecas.
-
-**Java:** há classes auxiliares, exemplos gráficos e arquivos com dependências entre si. Confira a correspondência entre nome da classe e arquivo, os pacotes e a codificação. Projetos com Swing/AWT exigem interface gráfica.
-
-**PHP:** alguns exemplos são scripts de terminal; outros fazem parte de conjuntos de classes. Verifique inclusões e versão antes de executar.
-
-### 3. Comece com um exemplo pequeno
-
-**PHP — Bubble Sort**, a partir da raiz do repositório:
+**PHP — Bubble Sort**, com PHP instalado, a partir da raiz:
 
 ```bash
 php PHP/bubble_sort.php
 ```
-
-Esse arquivo inclui duas listas de entrada e imprime os resultados da ordenação.
 
 **Java — algoritmo de Euclides**, com JDK instalado:
 
@@ -174,19 +148,7 @@ java MDC 48 18
 
 Para essa entrada, o resultado esperado é **6**.
 
-Os comandos acima se baseiam nos arquivos consultados. A coleção completa não foi executada ou validada nesta revisão do README.
-
-## Como estudar uma implementação
-
-Use estas perguntas para transformar a leitura do código em aprendizado:
-
-1. **Qual problema resolve?** Identifique entrada, saída e pré-condições.
-2. **Por que funciona?** Acompanhe as variáveis e os estados intermediários.
-3. **Quais casos exigem atenção?** Explore ausência do elemento, valores repetidos, limites e entradas vazias.
-4. **Quanto custa?** Analise tempo e memória em função do tamanho da entrada.
-5. **Que alternativa existe?** Compare clareza, restrições e desempenho com outra abordagem.
-
-A complexidade depende da implementação e do caso analisado. Por exemplo, uma versão de Bubble Sort que encerra ao não realizar trocas pode ter comportamento diferente de uma versão que sempre percorre todos os passos.
+Em Java, alguns exemplos dependem de outras classes, de banco de dados ou de interface gráfica. Em PHP, confira os arquivos incluídos e a versão utilizada. Para Python e IA no Drive, revise as instruções, bibliotecas e caminhos de cada projeto; materiais antigos podem exigir adaptação.
 
 ## Livros, artigos e curso
 
@@ -202,9 +164,9 @@ Para consultar a linguagem: [Python](https://docs.python.org/3/tutorial/) · [Ja
 
 ## Contribuições e créditos
 
-Encontrou um erro, uma oportunidade de explicar melhor um algoritmo ou uma incompatibilidade? Abra uma **issue** ou envie um **pull request** com o caminho do arquivo e uma descrição objetiva.
+Para sugerir uma correção nos códigos deste repositório, abra uma **issue** ou envie um **pull request**, indicando o caminho do arquivo, a versão da linguagem e o comportamento esperado.
 
-Ao propor uma alteração, informe a versão da linguagem e inclua uma entrada com o resultado esperado. Preserve as referências e os créditos existentes nos códigos e diferencie uma correção de uma nova implementação.
+Para informar um link com problema ou sugerir um material, indique o acervo e a subpasta correspondente. Preserve os créditos e as referências dos autores presentes nos materiais.
 
 ---
 
