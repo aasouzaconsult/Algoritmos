@@ -7,6 +7,8 @@
 
 [📊 BI / Analytics](https://drive.google.com/drive/folders/16dTG4E20AzdaVPXN1Issy50nYMIiHQGD?usp=sharing) · [🤖 IA, NLP e Python](https://drive.google.com/drive/folders/1cQbk6w5AqhwC_CAfLynIc75-8lJd11s_?usp=sharing) · [🗂️ Fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing)
 
+**[🐍 Fundamentos de Python](https://drive.google.com/drive/folders/1xlUqMaWHm74OUF5K4tI3gzT3L9a-2dtY) · [💬 NLP — Processamento de Linguagem Natural](https://drive.google.com/drive/folders/1-c2nP-gejjtnQD6ci4WGidra0hSV6bKj)**
+
 [Guia de navegação](#onde-encontrar-cada-material) · [Acervos no Drive](#materiais-no-google-drive) · [Java e PHP no GitHub](#códigos-no-github) · [Como estudar](#como-aproveitar-os-materiais)
 
 </div>
@@ -17,13 +19,15 @@
 
 Os materiais estão organizados em **dois locais**: este repositório mantém os códigos de **Java e PHP**, e os acervos temáticos abaixo são acessados pelo **Google Drive**.
 
-**Procurando Python, Machine Learning, IA, BI ou bases de dados? Comece pelos três links do Drive.** As antigas pastas locais de Python e Machine Learning não fazem mais parte da estrutura deste repositório.
+**Procurando Python, Machine Learning, IA, BI ou bases de dados? Use os links dos acervos e os atalhos de Python e NLP acima.** As antigas pastas locais de Python e Machine Learning não fazem mais parte da estrutura deste repositório.
 
 | Quero encontrar… | Onde acessar |
 | --- | --- |
 | **Power BI, Tableau, projetos e referências de BI** | [📊 BI / Analytics](https://drive.google.com/drive/folders/16dTG4E20AzdaVPXN1Issy50nYMIiHQGD?usp=sharing) |
 | **Python, IA, NLP, Machine Learning, agentes ou RAG** | [🤖 IA, NLP e Python](https://drive.google.com/drive/folders/1cQbk6w5AqhwC_CAfLynIc75-8lJd11s_?usp=sharing) |
-| **Bases e arquivos para exercitar análises e modelos** | [🗂️ Fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing) |
+| **Começar pelos fundamentos de Python** | [🐍 Fundamentos de Python](https://drive.google.com/drive/folders/1xlUqMaWHm74OUF5K4tI3gzT3L9a-2dtY) |
+| **Estudar processamento de linguagem natural** | [💬 NLP](https://drive.google.com/drive/folders/1-c2nP-gejjtnQD6ci4WGidra0hSV6bKj) |
+| **Bases para exemplos de BI, IA, NLP e Machine Learning** | [🗂️ Fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing) |
 | **Algoritmos, estruturas de dados e exemplos em Java** | [☕ Pasta JAVA no GitHub](JAVA/) |
 | **Algoritmos e exercícios em PHP** | [🐘 Pasta PHP no GitHub](PHP/) |
 
@@ -45,13 +49,18 @@ Na área de **Projetos e Exemplos**, você encontra pastas de **Power BI**, **Ta
 
 Códigos e materiais de estudo sobre programação, análise de dados e inteligência artificial. Inclui áreas de **Código**, **Cursos e apresentações**, **Guias e Referências**, **Artigos**, **Anotações e Links**, **Planilhas de Estudo**, **Vídeos**, **Revistas** e **Imagens**.
 
+#### ⭐ Acesso direto: Python e NLP
+
+- **[🐍 Fundamentos de Python](https://drive.google.com/drive/folders/1xlUqMaWHm74OUF5K4tI3gzT3L9a-2dtY)** — atalho para os materiais de fundamentos da linguagem, ponto de partida para seguir com estudos e exemplos em dados e IA.
+- **[💬 NLP — Processamento de Linguagem Natural](https://drive.google.com/drive/folders/1-c2nP-gejjtnQD6ci4WGidra0hSV6bKj)** — atalho para os materiais de estudo de processamento de linguagem natural e trabalho com textos.
+
 Dentro de **Código**, os assuntos estão organizados em pastas como:
 
 | Interesse | Pastas para procurar |
 | --- | --- |
-| **Primeiros passos em dados** | Fundamentos de Python; Estatística; Análise e Preparação de Dados; Visualização de Dados. |
+| **Primeiros passos em dados** | [Fundamentos de Python](https://drive.google.com/drive/folders/1xlUqMaWHm74OUF5K4tI3gzT3L9a-2dtY); Estatística; Análise e Preparação de Dados; Visualização de Dados. |
 | **Modelagem e aprendizado de máquina** | Machine Learning; Regressão; Classificação; Agrupamento; Redes Neurais; Séries Temporais. |
-| **Linguagem e IA Generativa** | NLP; LLMs e IA Generativa; RAG e Bancos Vetoriais; Agentes e MCP. |
+| **Linguagem e IA Generativa** | [NLP](https://drive.google.com/drive/folders/1-c2nP-gejjtnQD6ci4WGidra0hSV6bKj); LLMs e IA Generativa; RAG e Bancos Vetoriais; Agentes e MCP. |
 | **Integração e aplicações** | Bancos de Dados e Integração; APIs e Aplicações; Automação; Engenharia de Dados e Nuvem. |
 | **Outros estudos** | Visão Computacional; Aprendizado por Reforço; Padrões e Regras de Associação; Projetos Aplicados; Cursos Práticos. |
 
@@ -61,7 +70,9 @@ Dentro de **Código**, os assuntos estão organizados em pastas como:
 
 **[→ Abrir o acervo de fontes de dados](https://drive.google.com/drive/folders/1UAhS3vrTKTGKSQZNhZCfKtl9dj06m9Wq?usp=sharing)**
 
-Bases e arquivos para praticar exploração, preparação de dados, visualização e Machine Learning. A pasta principal reúne as áreas **Dados** e **WEKA - mineração**.
+**Um acervo de dados para exemplos e exercícios de BI / Analytics, Inteligência Artificial (IA), Processamento de Linguagem Natural (NLP) e Machine Learning (ML).** Use as bases em atividades de exploração, preparação, visualização, análise de textos e modelagem, conforme as características de cada conjunto de dados.
+
+A pasta principal reúne as áreas **Dados** e **WEKA - mineração**.
 
 Em **Dados**, há arquivos em formatos como **CSV, Excel e Parquet**, além de materiais auxiliares e pastas como **BasesTestes** e **Fontes para Análise de BI**. Entre os exemplos disponíveis estão bases de **Titanic**, **crédito**, **fraude**, **vendas**, **faturas** e **Censo Escolar**.
 
